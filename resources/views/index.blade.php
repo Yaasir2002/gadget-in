@@ -9,19 +9,19 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Hexashop Ecommerce HTML CSS Template</title>
+    <title>Gadget-IN</title>
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
 
-    <link rel="stylesheet" href="../css/templatemo-hexashop.css">
+    <link rel="stylesheet" href="/assets/css/templatemo-hexashop.css">
 
-    <link rel="stylesheet" href="../css/owl-carousel.css">
+    <link rel="stylesheet" href="/assets/css/owl-carousel.css">
 
-    <link rel="stylesheet" href="../css/lightbox.css">
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
 <!--
 
 TemplateMo 571 Hexashop
@@ -42,9 +42,9 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </div>  
     <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
+    @if (auth()->check() && auth()->user()->role == 'admin')
+                    
+                 <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -52,34 +52,25 @@ https://templatemo.com/tm-571-hexashop
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png">
+                            <img src="/assets/images/logo.png">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#men">Men's</a></li>
-                            <li class="scroll-to-section"><a href="#women">Women's</a></li>
-                            <li class="scroll-to-section"><a href="#kids">Kid's</a></li>
                             <li class="submenu">
-                                <a href="javascript:;">Pages</a>
+                                <a href="javascript:;">Admin</a>
                                 <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="single-product.html">Single Product</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="about.html">Pemesanan</a></li>
+                                    <li><a href="products.html">Produk</a></li>
+                                    <li><a href="single-product.html">kategori</a></li>
+                                    <li><a href="contact.html">User</a></li>
                                 </ul>
                             </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#explore">Explore</a></li>
+                            <li class="scroll-to-section"><a href="#men">About us</a></li>
+                            <li class="scroll-to-section"><a href="#women">Team</a></li>
+                            <li class="scroll-to-section"><a href="#kids">INI ADMIN</a></li>
+                            <li class="scroll-to-section"><a href="#explore">Logout</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -91,6 +82,53 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+                    
+                @else
+                    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="/assets/images/logo.png">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Product</a>
+                                <ul>
+                                    <li><a href="#handphone">Handphone</a></li>
+                                    <li><a href="#laptop">Laptop</a></li>
+                                    <li><a href="#earphone">Earphone</a></li>
+                                    <li><a href="#camera">Camera</a></li>
+                                    <li><a href="/products">ALL PRODUK</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="/about">Team</a></li>
+                            <li class="scroll-to-section"><a href="/about">About Us</a></li>
+                            <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
+                            <li class="scroll-to-section"><a href="#kids">INI BUKAN ADMIN</a></li>
+                            <li class="scroll-to-section"><a href="#explore">Login</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+                
+
+                @endif
+    
+    
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
@@ -100,13 +138,13 @@ https://templatemo.com/tm-571-hexashop
                     <div class="left-content">
                         <div class="thumb">
                             <div class="inner-content">
-                                <h4>We Are Hexashop</h4>
-                                <span>Awesome, clean &amp; creative HTML5 Template</span>
+                                <h4>Selamat Datang di Gadget-IN</h4>
+                                <span>Barang Elektronik, Baru &amp; Menarik</span>
                                 <div class="main-border-button">
                                     <a href="#">Purchase Now!</a>
                                 </div>
                             </div>
-                            <img src="assets/images/left-banner-image.jpg" alt="">
+                            <img src="https://smartlegal.id/wp-content/uploads/2021/08/Barang-Elektronik-Impor-1024x729.jpeg" alt="">
                         </div>
                     </div>
                 </div>
@@ -117,19 +155,19 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Women</h4>
-                                            <span>Best Clothes For Women</span>
+                                            <h4>Handphone</h4>
+                                            <span>Best Produk</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Women</h4>
+                                                <h4>Handphone</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/images/baner-right-image-01.jpg">
+                                        <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/12/16/1211985491.png">
                                     </div>
                                 </div>
                             </div>
@@ -137,19 +175,19 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Men</h4>
+                                            <h4>Laptop</h4>
                                             <span>Best Clothes For Men</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Men</h4>
+                                                <h4>Laptop</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/images/baner-right-image-02.jpg">
+                                        <img src="https://cdn2.tstatic.net/shopping/foto/bank/images/axioo-slimbook-14-r5-3.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -157,19 +195,19 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Kids</h4>
+                                            <h4>Eaphone</h4>
                                             <span>Best Clothes For Kids</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Kids</h4>
+                                                <h4>Earphone</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/images/baner-right-image-03.jpg">
+                                        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/10/23/d2c207e1-c01c-481b-878f-c87c1ae778e8.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -177,19 +215,19 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Accessories</h4>
+                                            <h4>Camera</h4>
                                             <span>Best Trend Accessories</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Accessories</h4>
+                                                <h4>Camera</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="#">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/images/baner-right-image-04.jpg">
+                                        <img src="https://main.mobile.doss.co.id/storage/uploads/2023/06/b2a37912-9ee0-47a8-9656-2d489beeaf7b.webp">
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +245,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Men's Latest</h2>
+                        <h2>Handphone</h2>
                         <span>Details to details is what makes Hexashop different from the other themes.</span>
                     </div>
                 </div>
@@ -222,81 +260,12 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                            <li><a href="/single-product"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/single-product"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/men-01.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Spring</h4>
-                                    <span>$120.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/men-02.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Air Force 1 X</h4>
-                                    <span>$90.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/men-03.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Love Nana ‘20</h4>
-                                    <span>$150.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/men-01.jpg" alt="">
+                                    <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/12/16/1211985491.png" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Spring</h4>
@@ -324,7 +293,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Women's Latest</h2>
+                        <h2>Laptop</h2>
                         <span>Details to details is what makes Hexashop different from the other themes.</span>
                     </div>
                 </div>
@@ -344,80 +313,11 @@ https://templatemo.com/tm-571-hexashop
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/women-01.jpg" alt="">
+                                    <img src="https://cdn2.tstatic.net/shopping/foto/bank/images/axioo-slimbook-14-r5-3.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>New Green Jacket</h4>
                                     <span>$75.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/women-02.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Dress</h4>
-                                    <span>$45.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/women-03.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Spring Collection</h4>
-                                    <span>$130.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/women-01.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Spring</h4>
-                                    <span>$120.00</span>
                                     <ul class="stars">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -441,7 +341,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>Kid's Latest</h2>
+                        <h2>Earphone</h2>
                         <span>Details to details is what makes Hexashop different from the other themes.</span>
                     </div>
                 </div>
@@ -461,7 +361,7 @@ https://templatemo.com/tm-571-hexashop
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/kid-01.jpg" alt="">
+                                    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/10/23/d2c207e1-c01c-481b-878f-c87c1ae778e8.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>School Collection</h4>
@@ -475,6 +375,31 @@ https://templatemo.com/tm-571-hexashop
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Kids Area Ends ***** -->
+
+    <!-- ***** Men Area Starts ***** -->
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Camera</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
                             <div class="item">
                                 <div class="thumb">
                                     <div class="hover-content">
@@ -484,53 +409,7 @@ https://templatemo.com/tm-571-hexashop
                                             <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/kid-02.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Summer Cap</h4>
-                                    <span>$12.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/kid-03.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <h4>Classic Kid</h4>
-                                    <span>$30.00</span>
-                                    <ul class="stars">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <img src="assets/images/kid-01.jpg" alt="">
+                                    <img src="https://main.mobile.doss.co.id/storage/uploads/2023/06/b2a37912-9ee0-47a8-9656-2d489beeaf7b.webp" alt="">
                                 </div>
                                 <div class="down-content">
                                     <h4>Classic Spring</h4>
@@ -550,7 +429,7 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </div>
     </section>
-    <!-- ***** Kids Area Ends ***** -->
+    <!-- ***** Men Area Ends ***** -->
 
     <!-- ***** Explore Area Starts ***** -->
     <section class="section" id="explore">
@@ -558,7 +437,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-content">
-                        <h2>Explore Our Products</h2>
+                        <h2>About us</h2>
                         <span>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</span>
                         <div class="quote">
                             <i class="fa fa-quote-left"></i><p>You are not allowed to redistribute this template ZIP file on any other website.</p>
@@ -581,12 +460,12 @@ https://templatemo.com/tm-571-hexashop
                             </div>
                             <div class="col-lg-6">
                                 <div class="first-image">
-                                    <img src="assets/images/explore-image-01.jpg" alt="">
+                                    <img src="/assets/images/explore-image-01.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="second-image">
-                                    <img src="assets/images/explore-image-02.jpg" alt="">
+                                    <img src="/assets/images/explore-image-02.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -609,7 +488,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Social Media</h2>
+                        <h2>Team</h2>
                         <span>Details to details is what makes Hexashop different from the other themes.</span>
                     </div>
                 </div>
@@ -625,7 +504,7 @@ https://templatemo.com/tm-571-hexashop
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                        <img src="assets/images/instagram-01.jpg" alt="">
+                        <img src="/assets/images/instagram-01.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-2">
@@ -636,7 +515,7 @@ https://templatemo.com/tm-571-hexashop
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                        <img src="assets/images/instagram-02.jpg" alt="">
+                        <img src="/assets/images/instagram-02.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-2">
@@ -647,7 +526,7 @@ https://templatemo.com/tm-571-hexashop
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                        <img src="assets/images/instagram-03.jpg" alt="">
+                        <img src="/assets/images/instagram-03.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-2">
@@ -658,7 +537,7 @@ https://templatemo.com/tm-571-hexashop
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                        <img src="assets/images/instagram-04.jpg" alt="">
+                        <img src="/assets/images/instagram-04.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-2">
@@ -669,7 +548,7 @@ https://templatemo.com/tm-571-hexashop
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                        <img src="assets/images/instagram-05.jpg" alt="">
+                        <img src="/assets/images/instagram-05.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-2">
@@ -680,7 +559,7 @@ https://templatemo.com/tm-571-hexashop
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                        <img src="assets/images/instagram-06.jpg" alt="">
+                        <img src="/assets/images/instagram-06.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -747,7 +626,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-3">
                     <div class="first-item">
                         <div class="logo">
-                            <img src="assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
+                            <img src="/assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
                         </div>
                         <ul>
                             <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
@@ -803,26 +682,26 @@ https://templatemo.com/tm-571-hexashop
     
 
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="/assets/js/jquery-2.1.0.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 
     <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
+    <script src="/assets/js/owl-carousel.js"></script>
+    <script src="/assets/js/accordions.js"></script>
+    <script src="/assets/js/datepicker.js"></script>
+    <script src="/assets/js/scrollreveal.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/imgfix.min.js"></script> 
+    <script src="/assets/js/slick.js"></script> 
+    <script src="/assets/js/lightbox.js"></script> 
+    <script src="/assets/js/isotope.js"></script> 
     
     <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+    <script src="/assets/js/custom.js"></script>
 
     <script>
 
