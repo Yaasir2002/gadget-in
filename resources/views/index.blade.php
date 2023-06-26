@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="/assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="/assets/css/lightbox.css">
+
+    <link rel="stylesheet" href="/assets/css/landingpage.css">
 <!--
 
 TemplateMo 571 Hexashop
@@ -32,104 +34,11 @@ https://templatemo.com/tm-571-hexashop
     </head>
     
     <body>
+    @extends('main')
     
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
-    @if (auth()->check() && auth()->user()->role == 'admin')
-                    
-                 <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="/assets/images/logo.png">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Admin</a>
-                                <ul>
-                                    <li><a href="about.html">Pemesanan</a></li>
-                                    <li><a href="products.html">Produk</a></li>
-                                    <li><a href="single-product.html">kategori</a></li>
-                                    <li><a href="contact.html">User</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#men">About us</a></li>
-                            <li class="scroll-to-section"><a href="#women">Team</a></li>
-                            <li class="scroll-to-section"><a href="#kids">INI ADMIN</a></li>
-                            <li class="scroll-to-section"><a href="#explore">Logout</a></li>
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-                    
-                @else
-                    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="/assets/images/logo.png">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Product</a>
-                                <ul>
-                                    <li><a href="#handphone">Handphone</a></li>
-                                    <li><a href="#laptop">Laptop</a></li>
-                                    <li><a href="#earphone">Earphone</a></li>
-                                    <li><a href="#camera">Camera</a></li>
-                                    <li><a href="/products">ALL PRODUK</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="/about">Team</a></li>
-                            <li class="scroll-to-section"><a href="/about">About Us</a></li>
-                            <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
-                            <li class="scroll-to-section"><a href="#kids">INI BUKAN ADMIN</a></li>
-                            <li class="scroll-to-section"><a href="#explore">Login</a></li>
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
                 
 
-                @endif
-    
-    
-
+    @section('content1')
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
         <div class="container-fluid">
@@ -238,8 +147,10 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
+    @endsection
 
-    <!-- ***** Men Area Starts ***** -->
+    @section('content2')
+        <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
         <div class="container">
             <div class="row">
@@ -287,8 +198,57 @@ https://templatemo.com/tm-571-hexashop
     </section>
     <!-- ***** Men Area Ends ***** -->
 
-    <!-- ***** Women Area Starts ***** -->
-    <section class="section" id="women">
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Tablet</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/single-product"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/single-product"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/12/16/1211985491.png" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Men Area Ends ***** -->
+    @endsection
+    
+@section('content3')
+     <!-- ***** Women Area Starts ***** -->
+     <section class="section" id="women">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -334,8 +294,10 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </section>
     <!-- ***** Women Area Ends ***** -->
-
-    <!-- ***** Kids Area Starts ***** -->
+@endsection
+   
+    @section('content4')
+        <!-- ***** Kids Area Starts ***** -->
     <section class="section" id="kids">
         <div class="container">
             <div class="row">
@@ -382,8 +344,10 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </section>
     <!-- ***** Kids Area Ends ***** -->
-
-    <!-- ***** Men Area Starts ***** -->
+    @endsection
+    
+    @section('content5')
+        <!-- ***** Men Area Starts ***** -->
     <section class="section" id="men">
         <div class="container">
             <div class="row">
@@ -430,22 +394,24 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </section>
     <!-- ***** Men Area Ends ***** -->
-
-    <!-- ***** Explore Area Starts ***** -->
+    @endsection
+    
+    @section('content6')
+        <!-- ***** Explore Area Starts ***** -->
     <section class="section" id="explore">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-content">
                         <h2>About us</h2>
-                        <span>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</span>
+                        <span>Gadgetin adalah platform e-commerce yang menyediakan berbagai macam gadget terbaru dan terkini. Kami memahami kebutuhan Anda akan teknologi terkini dan kami hadir untuk memberikan solusi terbaik.</span>
                         <div class="quote">
-                            <i class="fa fa-quote-left"></i><p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+                            <i class="fa fa-quote-left"></i><p>Kami percaya bahwa teknologi dapat memudahkan hidup kita dan meningkatkan produktivitas. Oleh karena itu, visi kami adalah untuk memberikan akses mudah kepada semua orang untuk mendapatkan teknologi terbaru dengan harga terjangkau.</p>
                         </div>
-                        <p>There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.</p>
-                        <p>If this template is beneficial for your website or business, please kindly <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">support us</a> a little via PayPal. Please also tell your friends about our great website. Thank you.</p>
+                        <p>Kami berkomitmen untuk memberikan pengalaman belanja online yang aman, nyaman, dan terpercaya. Dengan sistem pembayaran yang terjamin keamanannya, Anda dapat berbelanja dengan tenang dan merasa puas dengan setiap pembelian yang Anda lakukan di Gadgetin.</p>
+                        <p>Terima kasih telah memilih Gadgetin sebagai mitra belanja gadget Anda, <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">support us</a> Kami berharap dapat terus memberikan pelayanan terbaik dan memberikan Anda pengalaman belanja yang menyenangkan.</p>
                         <div class="main-border-button">
-                            <a href="products.html">Discover More</a>
+                            <a href="/products">Temukan Lebih</a>
                         </div>
                     </div>
                 </div>
@@ -454,23 +420,23 @@ https://templatemo.com/tm-571-hexashop
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="leather">
-                                    <h4>Leather Bags</h4>
-                                    <span>Latest Collection</span>
+                                    <h4>Iphone</h4>
+                                    <span>Terbaru</span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="first-image">
-                                    <img src="/assets/images/explore-image-01.jpg" alt="">
+                                    <img src="data:image/jpeg;base64,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" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="second-image">
-                                    <img src="/assets/images/explore-image-02.jpg" alt="">
+                                    <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/03/02/iphone-14-pro-max-iboxcoid-2542125501.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="types">
-                                    <h4>Different Types</h4>
+                                    <h4>Merk Lainya</h4>
                                     <span>Over 304 Products</span>
                                 </div>
                             </div>
@@ -481,100 +447,80 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </section>
     <!-- ***** Explore Area Ends ***** -->
+    @endsection
 
-    <!-- ***** Social Area Starts ***** -->
-    <section class="section" id="social">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2>Team</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+    @section('content7')
+    <div class="container">
+        <div class="section-heading">
+            <h2 style="text-align:center;">Our Team</h2>
+            <span style="margin: auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ex error ducimus voluptas quidem? Quae minima delectus explicabo? Atque, impedit!</span>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="/assets/images/zila.jpg">
+                    <div class="team-content">
+                        <h3 class="title">Naazila Alfa Syahrin</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="/assets/images/yasir.jpg">
+                    <div class="team-content">
+                        <h3 class="title">Yaasir Aidil Fitrah</h3>
+                        <span class="post">Web Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="/assets/images/radit.jpg">
+                    <div class="team-content">
+                        <h3 class="title">Muhammad Raditya Anwar</h3>
+                        <span class="post">Web Designer</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row images">
-                <div class="col-2">
-                    <div class="thumb">
-                        <div class="icon">
-                            <a href="http://instagram.com">
-                                <h6>Fashion</h6>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div>
-                        <img src="/assets/images/instagram-01.jpg" alt="">
+
+        <div class="row1">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="/assets/images/nadya.jpg">
+                    <div class="team-content">
+                        <h3 class="title">Nadya Mutia Safira</h3>
+                        <span class="post">Web Designer</span>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="thumb">
-                        <div class="icon">
-                            <a href="http://instagram.com">
-                                <h6>New</h6>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div>
-                        <img src="/assets/images/instagram-02.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="thumb">
-                        <div class="icon">
-                            <a href="http://instagram.com">
-                                <h6>Brand</h6>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div>
-                        <img src="/assets/images/instagram-03.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="thumb">
-                        <div class="icon">
-                            <a href="http://instagram.com">
-                                <h6>Makeup</h6>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div>
-                        <img src="/assets/images/instagram-04.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="thumb">
-                        <div class="icon">
-                            <a href="http://instagram.com">
-                                <h6>Leather</h6>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div>
-                        <img src="/assets/images/instagram-05.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="thumb">
-                        <div class="icon">
-                            <a href="http://instagram.com">
-                                <h6>Bag</h6>
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </div>
-                        <img src="/assets/images/instagram-06.jpg" alt="">
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="/assets/images/fuad.jpg">
+                    <div class="team-content">
+                        <h3 class="title">Raffuad Munawir</h3>
+                        <span class="post">Web Designer</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ***** Social Area Ends ***** -->
+    </div>
+    @endsection
+    
 
-    <!-- ***** Subscribe Area Starts ***** -->
+    @section('content8')
+        <!-- ***** Subscribe Area Starts ***** -->
     <div class="subscribe">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="section-heading">
-                        <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <h2>Berlangganan untuk dapat DISKON 90%</h2>
+                        <span>Datang ke toko kami</span>
                     </div>
                     <form id="subscribe" action="" method="get">
                         <div class="row">
@@ -600,16 +546,16 @@ https://templatemo.com/tm-571-hexashop
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span></li>
-                                <li>Phone:<br><span>010-020-0340</span></li>
-                                <li>Office Location:<br><span>North Miami Beach</span></li>
+                                <li>Store Location:<br><span>POSS NAD</span></li>
+                                <li>Phone:<br><span>+62-020-0340</span></li>
+                                <li>Office Location:<br><span>STT Terpadu Nurul FIkri</span></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
                                 <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
-                                <li>Email:<br><span>info@company.com</span></li>
-                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                                <li>Email:<br><span>gadget-in@gmail.com</span></li>
+                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Linkedin</a></span></li>
                             </ul>
                         </div>
                     </div>
@@ -618,108 +564,8 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </div>
     <!-- ***** Subscribe Area Ends ***** -->
+    @endsection
+
     
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="first-item">
-                        <div class="logo">
-                            <img src="/assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
-                        </div>
-                        <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Shopping &amp; Categories</h4>
-                    <ul>
-                        <li><a href="#">Men’s Shopping</a></li>
-                        <li><a href="#">Women’s Shopping</a></li>
-                        <li><a href="#">Kid's Shopping</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Help &amp; Information</h4>
-                    <ul>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ's</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Tracking ID</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12">
-                    <div class="under-footer">
-                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
-                        
-                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
-
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank" title="free & premium responsive templates">ThemeWagon</a></p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     
-
-    <!-- jQuery -->
-    <script src="/assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="/assets/js/popper.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="/assets/js/owl-carousel.js"></script>
-    <script src="/assets/js/accordions.js"></script>
-    <script src="/assets/js/datepicker.js"></script>
-    <script src="/assets/js/scrollreveal.min.js"></script>
-    <script src="/assets/js/waypoints.min.js"></script>
-    <script src="/assets/js/jquery.counterup.min.js"></script>
-    <script src="/assets/js/imgfix.min.js"></script> 
-    <script src="/assets/js/slick.js"></script> 
-    <script src="/assets/js/lightbox.js"></script> 
-    <script src="/assets/js/isotope.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="/assets/js/custom.js"></script>
-
-    <script>
-
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
-                
-            });
-        });
-
-    </script>
-
-  </body>
-</html>
+   
