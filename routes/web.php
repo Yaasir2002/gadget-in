@@ -32,3 +32,19 @@ Route::get('/products', function () {
 Route::get('/single-product', function () {
     return view('single-product');
 });
+
+
+
+Route::get('/register', [AuthController::class, 'showRegistrationForm']);
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::get('/users', function () {
+    return view('users/index');
+
+});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
