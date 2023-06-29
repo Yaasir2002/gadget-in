@@ -8,6 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+    
+
 
     <title>Gadget-IN</title>
 
@@ -22,6 +26,8 @@
     <link rel="stylesheet" href="/assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="/assets/css/lightbox.css">
+
+    
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -154,21 +160,23 @@
                 <div class="col-lg-3">
                     <div class="first-item">
                         <div class="logo">
-                            <img src="/assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
+                            <img src="/assets/images/white-logo.png" alt="Gadget-in">
                         </div>
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Depok, POSNAD</a></li>
+                            <li><a href="#">Gadget-IN@company.com</a></li>
+                            <li><a href="#">083927732</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <h4>Shopping &amp; Categories</h4>
+                    <h4>Categories</h4>
                     <ul>
-                        <li><a href="#">Men’s Shopping</a></li>
-                        <li><a href="#">Women’s Shopping</a></li>
-                        <li><a href="#">Kid's Shopping</a></li>
+                        <li><a href="#">Handphone</a></li>
+                        <li><a href="#">Tablet</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Earphone</a></li>
+                        <li><a href="#">Camera</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
