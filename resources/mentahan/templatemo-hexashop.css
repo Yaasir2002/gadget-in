@@ -28,7 +28,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("ht://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 /* 
 ---------------------------------------------
 reset
@@ -87,7 +87,6 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -159,21 +158,6 @@ body {
 .main-border-button a:hover {
   background-color: #fff;
   color: #2a2a2a;
-}
-
-.main-border-button1 a {
-  font-size: 13px;
-  color: #2a2a2a;
-  border: 1px solid #2a2a2a;
-  padding: 12px 25px;
-  display: inline-block;
-  font-weight: 500;
-  transition: all .3s;
-}
-
-.main-border-button1 a:hover {
-  background-color: #2a2a2a;
-  color: #fff;
 }
 
 .main-white-button a {
@@ -288,11 +272,6 @@ header
 
 .background-header .nav {
   margin-top: 20px !important;
-}
-
-.logo img{
-  width: 195px;
-  height: 75px;
 }
 
 .header-area .main-nav .nav {
@@ -784,69 +763,53 @@ banner
 
 /*
 ---------------------------------------------
-Handphone
+Men
 ---------------------------------------------
-*/
-.img98{
-  width: 195px;
-  height: 95px;
-}
+*/.
 
-.img99{
-  width: 323px;
-  height: 510px;
-  object-fit: cover;
-}
-
-.img1, .img2, .img3, .img4, .img5, .img6, .img7{
-  width: 323px;
-  height: 240px;
-  object-fit: cover;
-}
-
-#handphone {
+#men {
   padding-top: 90px;
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
 
-#handphone .section-heading {
+#men .section-heading {
   margin-bottom: 60px;
 }
 
-#handphone .item .down-content {
+#men .item .down-content {
   padding-top: 30px;
   position: relative;
   z-index: 3;
   background-color: #fff;
 }
 
-#handphone .item .down-content h4 {
+#men .item .down-content h4 {
   font-size: 22px;
   color: #2a2a2a;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-#handphone .item .down-content span {
+#men .item .down-content span {
   font-size: 18px;
   color: #a1a1a1;
   font-weight: 500;
   display: block;
 }
 
-#handphone .item .down-content ul.stars {
+#men .item .down-content ul.stars {
   position: absolute;
   right: 0;
   top: 30px;
 }
 
-#handphone .item .down-content ul.stars li {
+#men .item .down-content ul.stars li {
   display: inline;
   font-size: 13px;
 }
 
-#handphone .item .thumb .hover-content {
+#men .item .thumb .hover-content {
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -857,22 +820,22 @@ Handphone
   transition: all .5s;
 }
 
-#handphone .item .thumb:hover .hover-content {
+#men .item .thumb:hover .hover-content {
   bottom: 30px;
   opacity: 1;
   visibility: visible;
 }
 
-#handphone .item .thumb {
+#men .item .thumb {
   position: relative;
 }
 
-#handphone .item .thumb .hover-content ul li {
+#men .item .thumb .hover-content ul li {
   display: inline;
   margin: 0px 10px;
 }
 
-#handphone .item .thumb .hover-content ul li a {
+#men .item .thumb .hover-content ul li a {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -883,7 +846,7 @@ Handphone
 }
 
 
-#handphone .owl-nav {
+#men .owl-nav {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -891,22 +854,22 @@ Handphone
   transform: translateY(-25px);
 }
 
-#handphone .owl-dots {
+#men .owl-dots {
   display: none;
 }
     
-#handphone .owl-nav .owl-prev{
+#men .owl-nav .owl-prev{
   position: absolute;
   left: -80px;
   outline: none;
 }
 
-#handphone .owl-nav .owl-prev span,
-#handphone .owl-nav .owl-next span {
+#men .owl-nav .owl-prev span,
+#men .owl-nav .owl-next span {
   opacity: 0;
 }
 
-#handphone .owl-nav .owl-prev:before {
+#men .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #2a2a2a;
@@ -920,31 +883,31 @@ Handphone
   border :1px solid #2a2a2a;
 }
 
-#handphone .owl-nav .owl-prev {
+#men .owl-nav .owl-prev {
   opacity: 0.75;
   transition: all .5s;
 }
 
-#handphone .owl-nav .owl-prev:hover {
+#men .owl-nav .owl-prev:hover {
   opacity: 1;
 }
 
-#handphone .owl-nav .owl-next {
+#men .owl-nav .owl-next {
   opacity: 0.75;
   transition: all .5s;
 }
 
-#handphone .owl-nav .owl-next:hover {
+#men .owl-nav .owl-next:hover {
   opacity: 1;
 }
 
-#handphone .owl-nav .owl-next{
+#men .owl-nav .owl-next{
   outline: none;
   position: absolute;
   right: -85px;
 }
 
-#handphone .owl-nav .owl-next:before {
+#men .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #2a2a2a;
@@ -961,53 +924,53 @@ Handphone
 
 /*
 ---------------------------------------------
-tablet
+Women
 ---------------------------------------------
 */
 
-#tablet {
+#women {
   padding-top: 90px;
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
 
-#tablet .section-heading {
+#women .section-heading {
   margin-bottom: 60px;
 }
 
-#tablet .item .down-content {
+#women .item .down-content {
   padding-top: 30px;
   position: relative;
   z-index: 3;
   background-color: #fff;
 }
 
-#tablet .item .down-content h4 {
+#women .item .down-content h4 {
   font-size: 22px;
   color: #2a2a2a;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-#tablet .item .down-content span {
+#women .item .down-content span {
   font-size: 18px;
   color: #a1a1a1;
   font-weight: 500;
   display: block;
 }
 
-#tablet .item .down-content ul.stars {
+#women .item .down-content ul.stars {
   position: absolute;
   right: 0;
   top: 30px;
 }
 
-#tablet .item .down-content ul.stars li {
+#women .item .down-content ul.stars li {
   display: inline;
   font-size: 13px;
 }
 
-#tablet .item .thumb .hover-content {
+#women .item .thumb .hover-content {
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -1018,22 +981,22 @@ tablet
   transition: all .5s;
 }
 
-#tablet .item .thumb:hover .hover-content {
+#women .item .thumb:hover .hover-content {
   bottom: 30px;
   opacity: 1;
   visibility: visible;
 }
 
-#tablet .item .thumb {
+#women .item .thumb {
   position: relative;
 }
 
-#tablet .item .thumb .hover-content ul li {
+#women .item .thumb .hover-content ul li {
   display: inline;
   margin: 0px 10px;
 }
 
-#tablet .item .thumb .hover-content ul li a {
+#women .item .thumb .hover-content ul li a {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -1044,7 +1007,7 @@ tablet
 }
 
 
-#tablet .owl-nav {
+#women .owl-nav {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -1052,22 +1015,22 @@ tablet
   transform: translateY(-25px);
 }
 
-#tablet .owl-dots {
+#women .owl-dots {
   display: none;
 }
     
-#tablet .owl-nav .owl-prev{
+#women .owl-nav .owl-prev{
   position: absolute;
   left: -80px;
   outline: none;
 }
 
-#tablet .owl-nav .owl-prev span,
-#tablet .owl-nav .owl-next span {
+#women .owl-nav .owl-prev span,
+#women .owl-nav .owl-next span {
   opacity: 0;
 }
 
-#tablet .owl-nav .owl-prev:before {
+#women .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #2a2a2a;
@@ -1081,31 +1044,31 @@ tablet
   border :1px solid #2a2a2a;
 }
 
-#tablet .owl-nav .owl-prev {
+#women .owl-nav .owl-prev {
   opacity: 0.75;
   transition: all .5s;
 }
 
-#tablet .owl-nav .owl-prev:hover {
+#women .owl-nav .owl-prev:hover {
   opacity: 1;
 }
 
-#tablet .owl-nav .owl-next {
+#women .owl-nav .owl-next {
   opacity: 0.75;
   transition: all .5s;
 }
 
-#tablet .owl-nav .owl-next:hover {
+#women .owl-nav .owl-next:hover {
   opacity: 1;
 }
 
-#tablet .owl-nav .owl-next{
+#women .owl-nav .owl-next{
   outline: none;
   position: absolute;
   right: -85px;
 }
 
-#tablet .owl-nav .owl-next:before {
+#women .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #2a2a2a;
@@ -1121,53 +1084,53 @@ tablet
 
 /*
 ---------------------------------------------
-Laptop
+Kids
 ---------------------------------------------
 */
 
-#laptop {
+#kids {
   padding-top: 90px;
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
 }
 
-#laptop .section-heading {
+#kids .section-heading {
   margin-bottom: 60px;
 }
 
-#laptop .item .down-content {
+#kids .item .down-content {
   padding-top: 30px;
   position: relative;
   z-index: 3;
   background-color: #fff;
 }
 
-#laptop .item .down-content h4 {
+#kids .item .down-content h4 {
   font-size: 22px;
   color: #2a2a2a;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-#laptop .item .down-content span {
+#kids .item .down-content span {
   font-size: 18px;
   color: #a1a1a1;
   font-weight: 500;
   display: block;
 }
 
-#laptop .item .down-content ul.stars {
+#kids .item .down-content ul.stars {
   position: absolute;
   right: 0;
   top: 30px;
 }
 
-#laptop .item .down-content ul.stars li {
+#kids .item .down-content ul.stars li {
   display: inline;
   font-size: 13px;
 }
 
-#laptop .item .thumb .hover-content {
+#kids .item .thumb .hover-content {
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -1178,22 +1141,22 @@ Laptop
   transition: all .5s;
 }
 
-#laptop .item .thumb:hover .hover-content {
+#kids .item .thumb:hover .hover-content {
   bottom: 30px;
   opacity: 1;
   visibility: visible;
 }
 
-#laptop .item .thumb {
+#kids .item .thumb {
   position: relative;
 }
 
-#laptop .item .thumb .hover-content ul li {
+#kids .item .thumb .hover-content ul li {
   display: inline;
   margin: 0px 10px;
 }
 
-#laptop .item .thumb .hover-content ul li a {
+#kids .item .thumb .hover-content ul li a {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -1204,7 +1167,7 @@ Laptop
 }
 
 
-#laptop .owl-nav {
+#kids .owl-nav {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -1212,22 +1175,22 @@ Laptop
   transform: translateY(-25px);
 }
 
-#laptop .owl-dots {
+#kids .owl-dots {
   display: none;
 }
     
-#laptop .owl-nav .owl-prev{
+#kids .owl-nav .owl-prev{
   position: absolute;
   left: -80px;
   outline: none;
 }
 
-#laptop .owl-nav .owl-prev span,
-#laptop .owl-nav .owl-next span {
+#kids .owl-nav .owl-prev span,
+#kids .owl-nav .owl-next span {
   opacity: 0;
 }
 
-#laptop .owl-nav .owl-prev:before {
+#kids .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #2a2a2a;
@@ -1241,31 +1204,31 @@ Laptop
   border :1px solid #2a2a2a;
 }
 
-#laptop .owl-nav .owl-prev {
+#kids .owl-nav .owl-prev {
   opacity: 0.75;
   transition: all .5s;
 }
 
-#laptop .owl-nav .owl-prev:hover {
+#kids .owl-nav .owl-prev:hover {
   opacity: 1;
 }
 
-#laptop .owl-nav .owl-next {
+#kids .owl-nav .owl-next {
   opacity: 0.75;
   transition: all .5s;
 }
 
-#laptop .owl-nav .owl-next:hover {
+#kids .owl-nav .owl-next:hover {
   opacity: 1;
 }
 
-#laptop .owl-nav .owl-next{
+#kids .owl-nav .owl-next{
   outline: none;
   position: absolute;
   right: -85px;
 }
 
-#laptop .owl-nav .owl-next:before {
+#kids .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
   color: #2a2a2a;
@@ -1279,325 +1242,6 @@ Laptop
   border :1px solid #2a2a2a;
 }
 
-/*
----------------------------------------------
-Earphone
----------------------------------------------
-*/
-
-#earphone {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  border-bottom: 3px dotted #eee;
-}
-
-#earphone .section-heading {
-  margin-bottom: 60px;
-}
-
-#earphone .item .down-content {
-  padding-top: 30px;
-  position: relative;
-  z-index: 3;
-  background-color: #fff;
-}
-
-#earphone .item .down-content h4 {
-  font-size: 22px;
-  color: #2a2a2a;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-#earphone .item .down-content span {
-  font-size: 18px;
-  color: #a1a1a1;
-  font-weight: 500;
-  display: block;
-}
-
-#earphone .item .down-content ul.stars {
-  position: absolute;
-  right: 0;
-  top: 30px;
-}
-
-#earphone .item .down-content ul.stars li {
-  display: inline;
-  font-size: 13px;
-}
-
-#earphone .item .thumb .hover-content {
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  bottom: -60px;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .5s;
-}
-
-#earphone .item .thumb:hover .hover-content {
-  bottom: 30px;
-  opacity: 1;
-  visibility: visible;
-}
-
-#earphone .item .thumb {
-  position: relative;
-}
-
-#earphone .item .thumb .hover-content ul li {
-  display: inline;
-  margin: 0px 10px;
-}
-
-#earphone .item .thumb .hover-content ul li a {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  display: inline-block;
-  color: #2a2a2a;
-  background-color: #fff;
-}
-
-
-#earphone .owl-nav {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  transform: translateY(-25px);
-}
-
-#earphone .owl-dots {
-  display: none;
-}
-    
-#earphone .owl-nav .owl-prev{
-  position: absolute;
-  left: -80px;
-  outline: none;
-}
-
-#earphone .owl-nav .owl-prev span,
-#earphone .owl-nav .owl-next span {
-  opacity: 0;
-}
-
-#earphone .owl-nav .owl-prev:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #2a2a2a;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f104';
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  line-height: 48px;
-  border :1px solid #2a2a2a;
-}
-
-#earphone .owl-nav .owl-prev {
-  opacity: 0.75;
-  transition: all .5s;
-}
-
-#earphone .owl-nav .owl-prev:hover {
-  opacity: 1;
-}
-
-#earphone .owl-nav .owl-next {
-  opacity: 0.75;
-  transition: all .5s;
-}
-
-#earphone .owl-nav .owl-next:hover {
-  opacity: 1;
-}
-
-#earphone .owl-nav .owl-next{
-  outline: none;
-  position: absolute;
-  right: -85px;
-}
-
-#earphone .owl-nav .owl-next:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #2a2a2a;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f105';
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  line-height: 48px;
-  border :1px solid #2a2a2a;
-}
-
-/*
----------------------------------------------
-Camera
----------------------------------------------
-*/
-
-#camera {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  border-bottom: 3px dotted #eee;
-}
-
-#camera .section-heading {
-  margin-bottom: 60px;
-}
-
-#camera .item .down-content {
-  padding-top: 30px;
-  position: relative;
-  z-index: 3;
-  background-color: #fff;
-}
-
-#camera .item .down-content h4 {
-  font-size: 22px;
-  color: #2a2a2a;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-#camera .item .down-content span {
-  font-size: 18px;
-  color: #a1a1a1;
-  font-weight: 500;
-  display: block;
-}
-
-#camera .item .down-content ul.stars {
-  position: absolute;
-  right: 0;
-  top: 30px;
-}
-
-#camera .item .down-content ul.stars li {
-  display: inline;
-  font-size: 13px;
-}
-
-#camera .item .thumb .hover-content {
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  bottom: -60px;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .5s;
-}
-
-#camera .item .thumb:hover .hover-content {
-  bottom: 30px;
-  opacity: 1;
-  visibility: visible;
-}
-
-#camera .item .thumb {
-  position: relative;
-}
-
-#camera .item .thumb .hover-content ul li {
-  display: inline;
-  margin: 0px 10px;
-}
-
-#camera .item .thumb .hover-content ul li a {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  display: inline-block;
-  color: #2a2a2a;
-  background-color: #fff;
-}
-
-
-#camera .owl-nav {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  transform: translateY(-25px);
-}
-
-#camera .owl-dots {
-  display: none;
-}
-    
-#camera .owl-nav .owl-prev{
-  position: absolute;
-  left: -80px;
-  outline: none;
-}
-
-#camera .owl-nav .owl-prev span,
-#camera .owl-nav .owl-next span {
-  opacity: 0;
-}
-
-#camera .owl-nav .owl-prev:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #2a2a2a;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f104';
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  line-height: 48px;
-  border :1px solid #2a2a2a;
-}
-
-#camera .owl-nav .owl-prev {
-  opacity: 0.75;
-  transition: all .5s;
-}
-
-#camera .owl-nav .owl-prev:hover {
-  opacity: 1;
-}
-
-#camera .owl-nav .owl-next {
-  opacity: 0.75;
-  transition: all .5s;
-}
-
-#camera .owl-nav .owl-next:hover {
-  opacity: 1;
-}
-
-#camera .owl-nav .owl-next{
-  outline: none;
-  position: absolute;
-  right: -85px;
-}
-
-#camera .owl-nav .owl-next:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #2a2a2a;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f105';
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  line-height: 48px;
-  border :1px solid #2a2a2a;
-}
 
 /*
 ---------------------------------------------
@@ -1765,10 +1409,8 @@ Social
 }
 
 #social .thumb img {
-  overflow: hidden;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 

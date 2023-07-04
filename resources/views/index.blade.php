@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     
 
     <title>Gadget-IN</title>
@@ -29,19 +29,12 @@
     <link rel="stylesheet" href="/assets/css/landingpage.css">
     <!--
 
-TemplateMo 571 Hexashop
-
-https://templatemo.com/tm-571-hexashop
-
 -->
 </head>
 
 <body>
     @extends('template/main')
 
-
-
-    @section('content1')
         <!-- ***** Main Banner Area Start ***** -->
         <div class="main-banner" id="top">
             <div class="container-fluid">
@@ -52,11 +45,11 @@ https://templatemo.com/tm-571-hexashop
                                 <div class="inner-content">
                                     <h4>Selamat Datang di Gadget-IN</h4>
                                     <span>Barang Elektronik, Baru &amp; Menarik</span>
-                                    <div class="main-border-button">
+                                    <div class="main-border-button1">
                                         <a href="#">Purchase Now!</a>
                                     </div>
                                 </div>
-                                <img src="https://smartlegal.id/wp-content/uploads/2021/08/Barang-Elektronik-Impor-1024x729.jpeg"
+                                <img class="img99" src="https://smartlegal.id/wp-content/uploads/2021/08/Barang-Elektronik-Impor-1024x729.jpeg"
                                     alt="">
                             </div>
                         </div>
@@ -82,7 +75,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </div>
                                             </div>
                                             <img
-                                                src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/12/16/1211985491.png">
+                                                class="img1" src="/assets/images/handphone.png">
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +97,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </div>
                                             </div>
                                             <img
-                                                src="https://cdn2.tstatic.net/shopping/foto/bank/images/axioo-slimbook-14-r5-3.jpg">
+                                                class="img2" src="/assets/images/laptop.png">
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +119,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </div>
                                             </div>
                                             <img
-                                                src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/10/23/d2c207e1-c01c-481b-878f-c87c1ae778e8.jpg">
+                                                class="img3" src="/assets/images/earphone.png">
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +141,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </div>
                                             </div>
                                             <img
-                                                src="https://main.mobile.doss.co.id/storage/uploads/2023/06/b2a37912-9ee0-47a8-9656-2d489beeaf7b.webp">
+                                                class="img4" src="/assets/images/camera.png">
                                         </div>
                                     </div>
                                 </div>
@@ -159,11 +152,9 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </div>
         <!-- ***** Main Banner Area End ***** -->
-    @endsection
 
-    @section('content2')
         <!-- ***** Men Area Starts ***** -->
-        <section class="section" id="men">
+        <section class="section" id="handphone">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -188,7 +179,7 @@ https://templatemo.com/tm-571-hexashop
                                                 <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
-                                        <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/12/16/1211985491.png"
+                                        <img class="img5" src="/assets/images/handphone.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -211,7 +202,7 @@ https://templatemo.com/tm-571-hexashop
         </section>
         <!-- ***** Men Area Ends ***** -->
 
-        <section class="section" id="men">
+        <section class="section" id="tablet">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -236,7 +227,7 @@ https://templatemo.com/tm-571-hexashop
                                                 <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
-                                        <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/12/16/1211985491.png"
+                                        <img class="img6" src="/assets/images/tablet.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -258,11 +249,9 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </section>
         <!-- ***** Men Area Ends ***** -->
-    @endsection
-
-    @section('content3')
+   
         <!-- ***** Women Area Starts ***** -->
-        <section class="section" id="women">
+        <section class="section" id="laptop">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -288,7 +277,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img src="https://cdn2.tstatic.net/shopping/foto/bank/images/axioo-slimbook-14-r5-3.jpg"
+                                        <img class="" src="/assets/images/laptop.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -310,11 +299,9 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </section>
         <!-- ***** Women Area Ends ***** -->
-    @endsection
-
-    @section('content4')
+   
         <!-- ***** Kids Area Starts ***** -->
-        <section class="section" id="kids">
+        <section class="section" id="earphone">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -340,7 +327,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/10/23/d2c207e1-c01c-481b-878f-c87c1ae778e8.jpg"
+                                        <img src="/assets/images/earphone.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -362,11 +349,9 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </section>
         <!-- ***** Kids Area Ends ***** -->
-    @endsection
-
-    @section('content5')
+   
         <!-- ***** Men Area Starts ***** -->
-        <section class="section" id="men">
+        <section class="section" id="camera">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -392,7 +377,7 @@ https://templatemo.com/tm-571-hexashop
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img src="https://main.mobile.doss.co.id/storage/uploads/2023/06/b2a37912-9ee0-47a8-9656-2d489beeaf7b.webp"
+                                        <img src="/assets/images/camera.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -414,9 +399,7 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </section>
         <!-- ***** Men Area Ends ***** -->
-    @endsection
-
-    @section('content6')
+   
         <!-- ***** Explore Area Starts ***** -->
         <section class="section" id="explore">
             <div class="container">
@@ -479,9 +462,7 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </section>
         <!-- ***** Explore Area Ends ***** -->
-    @endsection
-
-    @section('content7')
+    
         <div class="container">
             <div class="section-heading">
                 <h2 style="text-align:center;">Our Team</h2>
@@ -542,10 +523,7 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
-    @endsection
-
-
-    @section('content8')
+    
         <!-- ***** Subscribe Area Starts ***** -->
         <div class="subscribe">
             <div class="container">
@@ -600,5 +578,22 @@ https://templatemo.com/tm-571-hexashop
                 </div>
             </div>
         </div>
+        <script>
+
+            $(function() {
+                var selectedClass = "";
+                $("p").click(function(){
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                    $("#portfolio div").not("."+selectedClass).fadeOut();
+                setTimeout(function() {
+                  $("."+selectedClass).fadeIn();
+                  $("#portfolio").fadeTo(50, 1);
+                }, 500);
+                    
+                });
+            });
+    
+        </script>
         <!-- ***** Subscribe Area Ends ***** -->
-    @endsection
+
