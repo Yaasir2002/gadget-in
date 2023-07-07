@@ -168,6 +168,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
+                        @foreach($products as $product)
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
                                 <div class="item">
@@ -183,8 +184,8 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>Handphone</h4>
-                                        <span>$120.00</span>
+                                        <h4>{{ $product->nama }}</h4>
+                                        <span>Rp.{{ $product->harga }}</span>
                                         <ul class="stars">
                                             <li><i class="fa fa-star"></i></li>
                                             <li><i class="fa fa-star"></i></li>
@@ -196,6 +197,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
