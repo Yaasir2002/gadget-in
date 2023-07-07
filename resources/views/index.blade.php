@@ -169,7 +169,6 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="men-item-carousel">
-                            @foreach($products as $product)
                             <div class="owl-men-item owl-carousel">
                                 <div class="item">
                                     <div class="thumb">
@@ -184,7 +183,7 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>{{ $products->nama }}</h4>
+                                        <h4>Handphone</h4>
                                         <span>$120.00</span>
                                         <ul class="stars">
                                             <li><i class="fa fa-star"></i></li>
@@ -196,7 +195,6 @@
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
                         </div>
                     </div>
                 </div>
