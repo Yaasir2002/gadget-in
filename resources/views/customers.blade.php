@@ -15,7 +15,7 @@
 @endsection
 
 @section('content2')
-<a href="{{ route('pelanggan.create2') }}" class="btn btn-primary mb-3">Tambah Pelanggan</a>
+<a href="{{ route('pelanggan.create') }}" class="btn btn-primary mb-3">Tambah Pelanggan</a>
 <div class="table-responsive" style="max-height: 400px; overflow-x: scroll;">
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
