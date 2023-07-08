@@ -26,9 +26,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/products', function () {
-    return view('products');
-});
+Route::get('/products', 
+    [ProductController::class,'products']
+);
+
 
 Route::get('/single-product', function () {
     return view('single-product');

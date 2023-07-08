@@ -11,4 +11,10 @@ class ProductController extends Controller
         $products = loop::all();
         return view('index', compact('products'));
     }
+
+    public function products()
+    {
+        $products = loop::all();
+        return view('products', compact('products'));
+    }
 }
