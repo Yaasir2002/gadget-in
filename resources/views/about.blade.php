@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Hexashop - About Page</title>
+    <title>About Us</title>
 
 
     <!-- Additional CSS Files -->
@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    
+    <link rel="stylesheet" href="/assets/css/team.css">
+
 <!--
 
 TemplateMo 571 Hexashop
@@ -41,8 +44,8 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner-content">
-                        <h2>About Our Company</h2>
-                        <span>Awesome, clean &amp; creative HTML5 Template</span>
+                        <h2>Gadget - In</h2>
+                        <span>Awesome, Modern &amp Powerfull </span>
                     </div>
                 </div>
             </div>
@@ -81,75 +84,62 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** About Area Ends ***** -->
 
     <!-- ***** Our Team Area Starts ***** -->
-    <section class="our-team">
+    <section class="above">
         <div class="container">
+            <div class="section-heading">
+                <h2 style="text-align:center;">Our Team</h2>
+                <span style="margin: auto; text-align:center;">Gadget - In merupakan aplikasi website yang dibuat untuk menyelesaikan project UAS kami pada mata kuliah pemrograman web 2, 
+                selain itu project ini membuat kami lebih mendalami mata kuliah pemrograman web kami membuatnya dengan semaksimal dan sebaiknya yang apa bisa kami lakukan.</span>
+            </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2>Our Amazing Team</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-item">
-                        <div class="thumb">
-                            <div class="hover-effect">
-                                <div class="inner-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <img src="assets/images/team-member-01.jpg">
-                        </div>
-                        <div class="down-content">
-                            <h4>Ragnar Lodbrok</h4>
-                            <span>Product Caretaker</span>
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="/assets/images/zila.jpg">
+                        <div class="team-content">
+                            <h3 class="title">Naazila Alfa Syahrin</h3>
+                            <span class="post">Web Developer</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="team-item">
-                        <div class="thumb">
-                            <div class="hover-effect">
-                                <div class="inner-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <img src="assets/images/team-member-02.jpg">
-                        </div>
-                        <div class="down-content">
-                            <h4>Ragnar Lodbrok</h4>
-                            <span>Product Caretaker</span>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="/assets/images/yasir.jpg">
+                        <div class="team-content">
+                            <h3 class="title">Yaasir Aidil Fitrah</h3>
+                            <span class="post">Web Designer</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="team-item">
-                        <div class="thumb">
-                            <div class="hover-effect">
-                                <div class="inner-content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <img src="assets/images/team-member-03.jpg">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="/assets/images/radit.jpg">
+                        <div class="team-content">
+                            <h3 class="title">Muhammad Raditya Anwar</h3>
+                            <span class="post">Web Designer</span>
                         </div>
-                        <div class="down-content">
-                            <h4>Ragnar Lodbrok</h4>
-                            <span>Product Caretaker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row1">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="/assets/images/nadya.jpg">
+                        <div class="team-content">
+                            <h3 class="title">Nadya Mutia Safira</h3>
+                            <span class="post">Web Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="/assets/images/fuad.jpg">
+                        <div class="team-content">
+                            <h3 class="title">Raffuad Munawir</h3>
+                            <span class="post">Web Designer</span>
                         </div>
                     </div>
                 </div>
@@ -172,21 +162,21 @@ https://templatemo.com/tm-571-hexashop
                     <div class="service-item">
                         <h4>Synther Vaporware</h4>
                         <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="assets/images/service-01.jpg" alt="">
+                        <img src="assets/images/store.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="service-item">
                         <h4>Locavore Squidward</h4>
                         <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="assets/images/service-02.jpg" alt="">
+                        <img src="assets/images/service.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="service-item">
                         <h4>Health Gothfam</h4>
                         <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="assets/images/service-03.jpg" alt="">
+                        <img src="assets/images/service-2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -200,26 +190,29 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-8">
                     <div class="section-heading">
-                        <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <h2>Berlangganan untuk dapat DISKON 90%</h2>
+                        <span>Datang ke toko kami</span>
                     </div>
                     <form id="subscribe" action="" method="get">
                         <div class="row">
-                          <div class="col-lg-5">
-                            <fieldset>
-                              <input name="name" type="text" id="name" placeholder="Your Name" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-5">
-                            <fieldset>
-                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-2">
-                            <fieldset>
-                              <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
-                            </fieldset>
-                          </div>
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="Your Name"
+                                        required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                        placeholder="Your Email Address" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-dark-button"><i
+                                            class="fa fa-paper-plane"></i></button>
+                                </fieldset>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -227,16 +220,17 @@ https://templatemo.com/tm-571-hexashop
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span></li>
-                                <li>Phone:<br><span>010-020-0340</span></li>
-                                <li>Office Location:<br><span>North Miami Beach</span></li>
+                                <li>Store Location:<br><span>POSS NAD</span></li>
+                                <li>Phone:<br><span>+62-020-0340</span></li>
+                                <li>Office Location:<br><span>STT Terpadu Nurul FIkri</span></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
                                 <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
-                                <li>Email:<br><span>info@company.com</span></li>
-                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                                <li>Email:<br><span>gadget-in@gmail.com</span></li>
+                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a
+                                            href="#">Instagram</a>, <a href="#">Linkedin</a></span></li>
                             </ul>
                         </div>
                     </div>
@@ -244,69 +238,7 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </div>
     </div>
-    <!-- ***** Subscribe Area Ends ***** -->
-
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="first-item">
-                        <div class="logo">
-                            <img src="assets/images/white-logo.png" alt="hexashop ecommerce templatemo">
-                        </div>
-                        <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Shopping &amp; Categories</h4>
-                    <ul>
-                        <li><a href="#">Men’s Shopping</a></li>
-                        <li><a href="#">Women’s Shopping</a></li>
-                        <li><a href="#">Kid's Shopping</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4>Help &amp; Information</h4>
-                    <ul>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ's</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Tracking ID</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12">
-                    <div class="under-footer">
-                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
-                        
-                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
-
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank" title="free & premium responsive templates">ThemeWagon</a></p>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
+    <!-- ***** Subscribe Area Ends ***** -->    
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>

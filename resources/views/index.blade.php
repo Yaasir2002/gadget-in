@@ -25,8 +25,6 @@
     <link rel="stylesheet" href="/assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="/assets/css/lightbox.css">
-
-    <link rel="stylesheet" href="/assets/css/landingpage.css">
     <!--
 
 -->
@@ -463,69 +461,7 @@
                 </div>
             </div>
         </section>
-        <!-- ***** Explore Area Ends ***** -->
-    
-        <div class="container">
-            <div class="section-heading">
-                <h2 style="text-align:center;">Our Team</h2>
-                <span style="margin: auto;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ex error
-                    ducimus voluptas quidem? Quae minima delectus explicabo? Atque, impedit!</span>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <img src="/assets/images/zila.jpg">
-                        <div class="team-content">
-                            <h3 class="title">Naazila Alfa Syahrin</h3>
-                            <span class="post">Web Developer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <img src="/assets/images/yasir.jpg">
-                        <div class="team-content">
-                            <h3 class="title">Yaasir Aidil Fitrah</h3>
-                            <span class="post">Web Designer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <img src="/assets/images/radit.jpg">
-                        <div class="team-content">
-                            <h3 class="title">Muhammad Raditya Anwar</h3>
-                            <span class="post">Web Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row1">
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <img src="/assets/images/nadya.jpg">
-                        <div class="team-content">
-                            <h3 class="title">Nadya Mutia Safira</h3>
-                            <span class="post">Web Designer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <img src="/assets/images/fuad.jpg">
-                        <div class="team-content">
-                            <h3 class="title">Raffuad Munawir</h3>
-                            <span class="post">Web Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+        
         <!-- ***** Subscribe Area Starts ***** -->
         <div class="subscribe">
             <div class="container">
