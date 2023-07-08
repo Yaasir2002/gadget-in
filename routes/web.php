@@ -50,3 +50,46 @@ Route::get('/users', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+use App\Http\Controllers\adminController;
+    Route::get('/admin', 
+        [adminController::class, 'admin'])->name('admin');
+
+    Route::get('/product', 
+        [adminController::class, 'product'])->name('produk.product'); 
+
+    Route::get('/create', 
+        [adminController::class, 'create'])->name('produk.create');
+
+    Route::post('/product/store', 
+        [adminController::class, 'store'])->name('produk.store');
+
+    Route::get('/product/edit/{id}', 
+        [adminController::class, 'edit'])->name('produk.edit'); 
+
+    Route::put('/product/update/{id}', 
+        [adminController::class, 'update'])->name('produk.update');
+
+    Route::delete('/product/destroy/{product}', 
+        [adminController::class, 'destroy'])->name('produk.destroy');
+
+    Route::get('/customers', 
+        [adminController::class, 'customers'])->name('pelanggan.customers');
+
+    Route::get('/create2', 
+        [adminController::class, 'create2'])->name('pelanggan.create'); 
+
+    Route::post('/customers/store', 
+        [adminController::class, 'store2'])->name('pelanggan.store2');
+
+    Route::get('/customers/edit/{id}', 
+        [adminController::class, 'editCustomer'])->name('pelanggan.edit2'); 
+
+    Route::put('/customers/update/{id}', 
+        [adminController::class, 'updateCustomer'])->name('pelanggan.update2');
+
+    Route::delete('/customers/destroy/{customer}', 
+        [adminController::class, 'destroyCustomer'])->name('pelanggan.destroy');
+
+    Route::get('/orders', 
+        [adminController::class, 'orders'])->name('orders');
