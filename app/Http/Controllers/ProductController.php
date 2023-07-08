@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Product;
+use App\loop;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
+        $products = loop::all();
         return view('index', compact('products'));
+    }
+
+    public function products()
+    {
+        $products = loop::all();
+        return view('products', compact('products'));
     }
 }

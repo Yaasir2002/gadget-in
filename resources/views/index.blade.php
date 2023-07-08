@@ -166,9 +166,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        @foreach($products as $product)
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
+                                @foreach($products as $product)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
@@ -182,20 +182,13 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>{{ $product->nama }}</h4>
+                                        <h5>{{ $product->nama }}</h5>
                                         <span>Rp.{{ $product->harga }}</span>
-                                        <ul class="stars">
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
-                        @endforeach
                     </div>
                 </div>
             </div>
@@ -218,6 +211,7 @@
                     <div class="col-lg-12">
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
+                            @foreach($products as $product)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
@@ -231,17 +225,11 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>Classic Spring</h4>
-                                        <span>$120.00</span>
-                                        <ul class="stars">
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
+                                        <h5>{{ $product->nama }}</h5>
+                                        <span>Rp.{{ $product->harga }}</span>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -267,6 +255,7 @@
                     <div class="col-lg-12">
                         <div class="women-item-carousel">
                             <div class="owl-women-item owl-carousel">
+                            @foreach($products as $product)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
@@ -281,17 +270,11 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>New Green Jacket</h4>
-                                        <span>$75.00</span>
-                                        <ul class="stars">
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
+                                        <h5>{{ $product->nama }}</h5>
+                                        <span>Rp.{{ $product->harga }}</span>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -317,6 +300,7 @@
                     <div class="col-lg-12">
                         <div class="kid-item-carousel">
                             <div class="owl-kid-item owl-carousel">
+                            @foreach($products as $product)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
@@ -327,21 +311,15 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img src="/assets/images/earphone.png"
+                                        <img class="" src="/assets/images/laptop.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>School Collection</h4>
-                                        <span>$80.00</span>
-                                        <ul class="stars">
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
+                                        <h5>{{ $product->nama }}</h5>
+                                        <span>Rp.{{ $product->harga }}</span>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -367,6 +345,7 @@
                     <div class="col-lg-12">
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
+                            @foreach($products as $product)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
@@ -377,21 +356,15 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img src="/assets/images/camera.png"
+                                        <img class="" src="/assets/images/laptop.png"
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h4>Classic Spring</h4>
-                                        <span>$120.00</span>
-                                        <ul class="stars">
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
+                                        <h5>{{ $product->nama }}</h5>
+                                        <span>Rp.{{ $product->harga }}</span>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
