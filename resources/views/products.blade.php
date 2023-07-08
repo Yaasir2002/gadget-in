@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Hexashop - Product Listing Page</title>
+    <title>Gadget-IN - Product Listing Page</title>
 
 
     <!-- Additional CSS Files -->
@@ -32,7 +32,8 @@ https://templatemo.com/tm-571-hexashop
     </head>
     
     <body>
-    @extends('main')
+    @extends('template/main')
+    
     <!-- ***** Main Banner Area Start ***** -->
     <div class="page-heading" id="top">
         <div class="container">

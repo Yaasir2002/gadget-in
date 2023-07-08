@@ -8,8 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+
     
 
 
@@ -27,7 +26,10 @@
 
     <link rel="stylesheet" href="/assets/css/lightbox.css">
 
+  </head>
+  <body>
     
+  
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -47,9 +49,10 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             <img src="/assets/images/logo.png">
                         </a>
+                        
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
@@ -87,13 +90,13 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             <img src="/assets/images/logo.png">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">Product</a>
                                 <ul>
@@ -122,35 +125,35 @@
     <!-- ***** Header Area End ***** -->
     @endif
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content1')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content2')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content3')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content4')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content5')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content6')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content7')
     </div>
 
-    <div class="container mt-4">
+    <div class="">
         @yield('content8')
     </div>
      <!-- ***** Footer Start ***** -->
@@ -239,23 +242,7 @@
     <!-- Global Init -->
     <script src="/assets/js/custom.js"></script>
 
-    <script>
-
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
-                
-            });
-        });
-
-    </script>
+   
 
   </body>
 </html>
