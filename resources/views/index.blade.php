@@ -186,13 +186,6 @@
                                     <div class="down-content">
                                         <h5>{{ $product->nama }}</h5>
                                         <span>Rp.{{ $product->harga }}</span>
-                                        <ul class="stars">
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
                                     </div>
                                 </div>
                                 @endforeach

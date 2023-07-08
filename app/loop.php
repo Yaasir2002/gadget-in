@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class loop extends Model
 {
     use HasFactory;
+    protected $table = "products"; 
+
 }
