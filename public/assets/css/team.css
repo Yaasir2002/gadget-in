@@ -1,8 +1,17 @@
 .above {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .beside{
-    margin-top: -100px;
+    margin-bottom: -50px;
+}
+.h2{
+    text-align: center;
+}
+.span{
+    margin-left: 20px;
+}
+.ul{
+    margin-bottom: 10px;
 }
 .row1{
     display: flex;
@@ -70,7 +79,7 @@ margin: 0;
 content: "";
 width: 2px;
 height: 300px;
-background: #95ccea;
+background: #d295ea;
 position: absolute;
 top: 10px;
 right: 0;
@@ -91,7 +100,7 @@ transform: translate(0, 0);
 .our-team .post{
 display: block;
 padding: 5px 10px;
-background: #95ccea;
+background: #95acea;
 font-size: 17px;
 font-weight: 700;
 color: #000;

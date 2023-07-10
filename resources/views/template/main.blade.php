@@ -186,8 +186,8 @@
                     <h4>Useful Links</h4>
                     <ul>
                         <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Product</a></li>
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Help</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>

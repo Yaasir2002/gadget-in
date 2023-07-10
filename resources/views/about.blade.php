@@ -59,18 +59,18 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-6">
                     <div class="left-image">
-                        <img src="assets/images/about-left-image.jpg" alt="">
+                        <img src="assets/images/storemain.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="right-content">
-                        <h4>About Us &amp; Our Skills</h4>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore.</span>
+                        <h4>About Us &amp; Our Store</h4>
+                        <span>Gadget-In merupakan toko yang menjual produk gadget, berdiri pada tahun 2020 hingga sekarang.</span>
                         <div class="quote">
-                            <i class="fa fa-quote-left"></i><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuski smod kon tempor incididunt ut labore.</p>
+                            <i class="fa fa-quote-left"></i><p>Yang begitu brilian tentang gadget adalah kesederhanaannya.   - Desmond Llewelyn</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        <ul>
+                        <p>Perkembangan Gadget-In sangat pesat dimulai dari lokasi gerai pertama berdiri yaitu di ruko sewa mall, hingga sekarang berkembang pesat memiliki satu toko besar utama dan toko cabang-cabang di beberapa kota lainnya.</p>
+                        <ul class="ul">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -83,13 +83,49 @@ https://templatemo.com/tm-571-hexashop
     </div>
     <!-- ***** About Area Ends ***** -->
 
+    <!-- ***** Services Area Starts ***** -->
+    <section class="our-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Services</h2>
+                        <span>Pelayanan terbaik yang membuat Gadget-In berbeda dari toko lainnya.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item">
+                        <h4>Update Product</h4>
+                        <p>Gadget-In selalu menjual produk-produk gadget ter-update masa kini.  </p>
+                        <img src="assets/images/store.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item">
+                        <h4>Customer's Choice</h4>
+                        <p>Pelanggan bebas memilih dan mencoba produk-produk dengan leluasa.</p>
+                        <img src="assets/images/service.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item">
+                        <h4>Our Recommendation</h4>
+                        <p>Staf memberi saran produk terbaik kepada pelanggan.</p>
+                        <img src="assets/images/service-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Services Area Ends ***** -->
+
     <!-- ***** Our Team Area Starts ***** -->
     <section class="above">
         <div class="container">
-            <div class="section-heading">
-                <h2 style="text-align:center;">Our Team</h2>
-                <span style="margin: auto; text-align:center;">Gadget - In merupakan aplikasi website yang dibuat untuk menyelesaikan project UAS kami pada mata kuliah pemrograman web 2, 
-                selain itu project ini membuat kami lebih mendalami mata kuliah pemrograman web kami membuatnya dengan semaksimal dan sebaiknya yang apa bisa kami lakukan.</span>
+            <div class="section-heading beside">
+                <h2 class="h2">Our Team</h2>
+                <span class="span">Gadget - In merupakan aplikasi website yang dibuat untuk menyelesaikan project UAS kami pada mata kuliah pemrograman web 2, 
+                selain itu project ini membuat kami lebih mendalami mata kuliah pemrograman web 2, terima kasih untuk Dosen kami Pak Rojul dan Asdos kami Ka Beki.</span>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -97,7 +133,7 @@ https://templatemo.com/tm-571-hexashop
                         <img src="/assets/images/zila.jpg">
                         <div class="team-content">
                             <h3 class="title">Naazila Alfa Syahrin</h3>
-                            <span class="post">Web Developer</span>
+                            <span class="post">Backend</span>
                         </div>
                     </div>
                 </div>
@@ -107,7 +143,7 @@ https://templatemo.com/tm-571-hexashop
                         <img src="/assets/images/yasir.jpg">
                         <div class="team-content">
                             <h3 class="title">Yaasir Aidil Fitrah</h3>
-                            <span class="post">Web Designer</span>
+                            <span class="post">Frontend</span>
                         </div>
                     </div>
                 </div>
@@ -129,7 +165,7 @@ https://templatemo.com/tm-571-hexashop
                         <img src="/assets/images/nadya.jpg">
                         <div class="team-content">
                             <h3 class="title">Nadya Mutia Safira</h3>
-                            <span class="post">Web Designer</span>
+                            <span class="post">Backend</span>
                         </div>
                     </div>
                 </div>
@@ -139,7 +175,7 @@ https://templatemo.com/tm-571-hexashop
                         <img src="/assets/images/fuad.jpg">
                         <div class="team-content">
                             <h3 class="title">Raffuad Munawir</h3>
-                            <span class="post">Web Designer</span>
+                            <span class="post">Frontend</span>
                         </div>
                     </div>
                 </div>
@@ -147,42 +183,6 @@ https://templatemo.com/tm-571-hexashop
         </div>
     </section>
     <!-- ***** Our Team Area Ends ***** -->
-
-    <!-- ***** Services Area Starts ***** -->
-    <section class="our-services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2>Our Services</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <h4>Synther Vaporware</h4>
-                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="assets/images/store.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <h4>Locavore Squidward</h4>
-                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="assets/images/service.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-item">
-                        <h4>Health Gothfam</h4>
-                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt ut labore, et dolore quis ipsum suspend.</p>
-                        <img src="assets/images/service-2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Services Area Ends ***** -->
 
     <!-- ***** Subscribe Area Starts ***** -->
     <div class="subscribe">
