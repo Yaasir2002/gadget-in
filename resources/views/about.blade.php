@@ -8,8 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
-    <title>About Us</title>
+    <title>Gadget-IN | About Us</title>
 
 
     <!-- Additional CSS Files -->

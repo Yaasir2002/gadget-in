@@ -35,7 +35,6 @@ class adminController extends Controller
             'stok' => 'required',
             'harga' => 'required',
             'deskripsi' => 'required',
-            'foto' => 'required',
             'types_id' => 'required'
         ]);
 
@@ -58,7 +57,6 @@ class adminController extends Controller
             'stok' => 'required',
             'harga' => 'required',
             'deskripsi' => 'required',
-            'foto' => 'required',
             'types_id' => 'required'
         ]);
 

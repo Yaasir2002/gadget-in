@@ -1,22 +1,8 @@
 @extends('template/admin')
 
-@section('content1')
-<div class="row mb-2">
-  <div class="col-sm-6">
-    <h1>Produk</h1>
-  </div>
-  <div class="col-sm-6">
-    <ol class="breadcrumb float-sm-right">
-      <li class="breadcrumb-item"><a href="admin/admin">Home</a></li>
-      <li class="breadcrumb-item active">Produk</li>
-    </ol>
-  </div>
-</div>
-@endsection
-
 @section('content2')
 <a href="{{ route('produk.create') }}" class="btn btn-primary mb-3">Tambah Produk</a>
-<div class="table-responsive" style="max-height: 400px; overflow-x: scroll;">
+<div style="max-height: 400px; overflow-x: scroll;">
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
       <tr class="text-center">
@@ -44,7 +30,7 @@
         <td>{{ $product->foto }}</td>
         <td>{{ $product->type->nama }}</td>
         <td style="white-space: nowrap;">
-          <a href="{{ route('produk.edit', ['id' => $product->id]) }}" class="btn btn-primary">Edit</a>
+          <a href="{{ route('produk.edit', ['id' => $product->id]) }}" class="btn btn-success">Edit</a>
           <form action="{{ route('produk.destroy', $product) }}" method="POST" style="display: inline;">
             @csrf
             @method('DELETE')

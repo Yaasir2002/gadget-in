@@ -1,19 +1,5 @@
 @extends('template/admin')
 
-@section('content1')
-<div class="row mb-2">
-  <div class="col-sm-6">
-    <h1>Pelanggan</h1>
-  </div>
-  <div class="col-sm-6">
-    <ol class="breadcrumb float-sm-right">
-      <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-      <li class="breadcrumb-item active">Pelanggan</li>
-    </ol>
-  </div>
-</div>
-@endsection
-
 @section('content2')
 <a href="{{ route('pelanggan.create') }}" class="btn btn-primary mb-3">Tambah Pelanggan</a>
 <div class="table-responsive" style="max-height: 400px; overflow-x: scroll;">
@@ -33,7 +19,7 @@
       <tr>
         <td>{{ $number }}</td>
         <td>{{ $customer->nama }}</td>
-        <td>{{ $customer->alamat }}</td>
+        <td>{{ $customer->address }}</td>
         <td>{{ $customer->no_hp }}</td>
         <td style="white-space: nowrap;">
           <a href="{{ route('pelanggan.edit2', ['id' => $customer->id]) }}" class="btn btn-primary">Edit</a>

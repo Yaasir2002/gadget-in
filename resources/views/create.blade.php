@@ -1,20 +1,5 @@
 @extends('template/admin')
 
-@section('content1')
-<div class="row mb-2">
-  <div class="col-sm-6">
-    <h1>Tambah Produk</h1>
-  </div>
-  <div class="col-sm-6">
-    <ol class="breadcrumb float-sm-right">
-      <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-      <li class="breadcrumb-item">Produk</li>
-      <li class="breadcrumb-item active">Tambah Produk</li>
-    </ol>
-  </div>
-</div>
-@endsection
-
 @section('content2')
 <div class="card">
   <div class="card-body">
