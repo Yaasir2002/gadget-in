@@ -47,11 +47,14 @@ Route::get('/users', function () {
     return view('users/index');
 
 });
-Auth::routes();
+    Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 use App\Http\Controllers\adminController;
+
+    Route::prefix('/admin')->group(function(){
+
     Route::get('/admin', 
         [adminController::class, 'admin'])->name('admin');
 
@@ -93,3 +96,6 @@ use App\Http\Controllers\adminController;
 
     Route::get('/orders', 
         [adminController::class, 'orders'])->name('orders');
+
+
+        });

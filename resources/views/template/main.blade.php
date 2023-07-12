@@ -60,16 +60,24 @@
                             <li class="submenu">
                                 <a href="javascript:;">Admin</a>
                                 <ul>
-                                    <li><a href="about.html">Pemesanan</a></li>
-                                    <li><a href="products.html">Produk</a></li>
-                                    <li><a href="single-product.html">kategori</a></li>
-                                    <li><a href="contact.html">User</a></li>
+                                    <li><a href="admin/orders">Pemesanan</a></li>
+                                    <li><a href="admin/product">Produk</a></li>
+                                    <li><a href="products">kategori</a></li>
+                                    <li><a href="admin/customers">User</a></li>
                                 </ul>
                             </li>
-                            <li class="scroll-to-section"><a href="#men">About us</a></li>
-                            <li class="scroll-to-section"><a href="#women">Team</a></li>
-                            <li class="scroll-to-section"><a href="#kids">INI ADMIN</a></li>
-                            <li class="scroll-to-section"><a href="#explore">Logout</a></li>
+                            <li class="scroll-to-section"><a href="about">About us</a></li>
+                            <li class="scroll-to-section"><a href="about">Team</a></li>
+                            <li class="scroll-to-section"><a href="admin/admin">INI ADMIN</a></li>
+                            <li class="breadcrumb-tem"> <a  href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                 {{ __('Logout') }}
+</a> </li>
+
+                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                 @csrf
+                             </form>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -111,7 +119,7 @@
                             <li class="scroll-to-section"><a href="/about">About Us</a></li>
                             <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
                             <li class="scroll-to-section"><a href="#kids">INI BUKAN ADMIN</a></li>
-                            <li class="scroll-to-section"><a href="#explore">Login</a></li>
+                            <li class="scroll-to-section"><a href="/login">Login</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>

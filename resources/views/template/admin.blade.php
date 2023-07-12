@@ -210,7 +210,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="/product" class="nav-link">
+            <a href="product" class="nav-link">
               <i class="nav-icon fas fa-mobile-alt"></i>
               <p>
                 Produk
@@ -218,7 +218,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/customers" class="nav-link">
+            <a href="customers" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Pelanggan
@@ -226,7 +226,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/orders" class="nav-link">
+            <a href="orders" class="nav-link">
             <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
                 Pesanan
