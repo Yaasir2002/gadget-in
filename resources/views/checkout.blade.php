@@ -109,9 +109,7 @@
                 @csrf
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Kode</span>
-                    @php $number = 1;  @endphp
-                    <input class="input100" type="text" name="kode" value="PS{{ $number }}" readonly>
-                    @php $number++ @endphp
+                    <input class="input100" type="text" name="kode" value="PS(angka)">
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 input100-select">
@@ -134,7 +132,7 @@
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Produk</span>
-                    <input class="input100" type="text" name="products_id" value="{{$products->nama}}" readonly>
+                    <input class="input100" type="text" name="products_id" value="{{$products->id}}" readonly>{{$products->nama}}
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Name is required">

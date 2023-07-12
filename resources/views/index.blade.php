@@ -174,7 +174,7 @@
                                         <div class="hover-content">
                                             <ul>
                                                 <li><a href="{{route('detail',$hp->id)}}"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('checkout', $hp->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <img class="img5" src="/assets/images/handphone.png"
@@ -216,7 +216,7 @@
                                         <div class="hover-content">
                                             <ul>
                                                 <li><a href="{{route('detail',$tablet->id)}}"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="{{route('checkout', $tablet->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <img class="img6" src="/assets/images/tablet.png"
@@ -259,7 +259,7 @@
                                         <div class="hover-content">
                                             <ul>
                                                 <li><a href="{{route('detail',$laptop->id)}}"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                                                <li><a href="{{route('checkout', $laptop->id)}}"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -303,7 +303,7 @@
                                         <div class="hover-content">
                                             <ul>
                                                 <li><a href="{{route('detail',$earphone->id)}}"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                                                <li><a href="{{route('checkout', $earphone->id)}}"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -347,7 +347,7 @@
                                         <div class="hover-content">
                                             <ul>
                                                 <li><a href="{{route('detail',$camera->id)}}"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                                                <li><a href="{{route('checkout', $camera->id)}}"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
                                         </div>

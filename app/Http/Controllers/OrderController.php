@@ -21,7 +21,6 @@ class OrderController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->except(['_token','submit']));
         Order::create($request->except(['_token','submit']));
     }
 }
