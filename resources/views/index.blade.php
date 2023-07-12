@@ -168,13 +168,12 @@
                     <div class="col-lg-12">
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
-                                @foreach($products as $product)
+                                @foreach($hps as $hp)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
                                             <ul>
-                                                <li><a href="/single-product"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="/single-product"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="{{route('detail',$hp->id)}}"><i class="fa fa-eye"></i></a></li>
                                                 <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
@@ -182,8 +181,8 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h5>{{ $product->nama }}</h5>
-                                        <span>Rp.{{ $product->harga }}</span>
+                                        <h5>{{ $hp->nama }}</h5>
+                                        <span>Rp.{{ $hp->harga }}</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -211,13 +210,12 @@
                     <div class="col-lg-12">
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
-                            @foreach($products as $product)
+                            @foreach($tablets as $tablet)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
                                             <ul>
-                                                <li><a href="/single-product"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="/single-product"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="{{route('detail',$tablet->id)}}"><i class="fa fa-eye"></i></a></li>
                                                 <li><a href="/single-product"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
@@ -225,8 +223,8 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h5>{{ $product->nama }}</h5>
-                                        <span>Rp.{{ $product->harga }}</span>
+                                        <h5>{{ $tablet->nama }}</h5>
+                                        <span>Rp.{{ $tablet->harga }}</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -255,13 +253,12 @@
                     <div class="col-lg-12">
                         <div class="women-item-carousel">
                             <div class="owl-women-item owl-carousel">
-                            @foreach($products as $product)
+                            @foreach($laptops as $laptop)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
                                             <ul>
-                                                <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="{{route('detail',$laptop->id)}}"><i class="fa fa-eye"></i></a></li>
                                                 <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
@@ -270,8 +267,8 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h5>{{ $product->nama }}</h5>
-                                        <span>Rp.{{ $product->harga }}</span>
+                                        <h5>{{ $laptop->nama }}</h5>
+                                        <span>Rp.{{ $laptop->harga }}</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -300,13 +297,12 @@
                     <div class="col-lg-12">
                         <div class="kid-item-carousel">
                             <div class="owl-kid-item owl-carousel">
-                            @foreach($products as $product)
+                            @foreach($earphones as $earphone)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
                                             <ul>
-                                                <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="{{route('detail',$earphone->id)}}"><i class="fa fa-eye"></i></a></li>
                                                 <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
@@ -315,8 +311,8 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h5>{{ $product->nama }}</h5>
-                                        <span>Rp.{{ $product->harga }}</span>
+                                        <h5>{{ $earphone->nama }}</h5>
+                                        <span>Rp.{{ $earphone->harga }}</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -345,13 +341,12 @@
                     <div class="col-lg-12">
                         <div class="men-item-carousel">
                             <div class="owl-men-item owl-carousel">
-                            @foreach($products as $product)
+                            @foreach($cameras as $camera)
                                 <div class="item">
                                     <div class="thumb">
                                         <div class="hover-content">
                                             <ul>
-                                                <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                                <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                                <li><a href="{{route('detail',$camera->id)}}"><i class="fa fa-eye"></i></a></li>
                                                 <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                                                 </li>
                                             </ul>
@@ -360,8 +355,8 @@
                                             alt="">
                                     </div>
                                     <div class="down-content">
-                                        <h5>{{ $product->nama }}</h5>
-                                        <span>Rp.{{ $product->harga }}</span>
+                                        <h5>{{ $camera->nama }}</h5>
+                                        <span>Rp.{{ $camera->harga }}</span>
                                     </div>
                                 </div>
                                 @endforeach

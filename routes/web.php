@@ -18,6 +18,10 @@ Route::get('/',
     [ProductController::class,'index']
 );
 
+Route::get('/produk/{id}', 
+[ProductController::class, 'view'])->name('detail');
+
+
 Route::get('/about', function () {
     return view('about');
 });
