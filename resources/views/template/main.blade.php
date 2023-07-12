@@ -60,7 +60,7 @@
                                 <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                                 <li class="scroll-to-section"><a href="/admin/admin">Dashboard</a></li>
                                 <li class="scroll-to-section"><a href="/admin/users">User</a></li>
-                                <li class="scroll-to-section"><a href="/admin/Kategori">Kategori</a></li>
+                                <li class="scroll-to-section"><a href="/admin/kategori">Kategori</a></li>
                                 <li class="scroll-to-section"><a href="/admin/product">Product</a></li>
                                 <li class="scroll-to-section"><a href="/admin/customers">Pelanggan</a></li>
                                 <li class="scroll-to-section"><a href="/admin/orders">Pesanan</a></li>

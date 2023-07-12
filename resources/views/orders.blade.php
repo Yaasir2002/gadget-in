@@ -5,7 +5,7 @@
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
       <tr class="text-center">
-        <th scope="col">#</th>
+        <th scope="col">No</th>
         <th scope="col">Kode</th>
         <th scope="col">Tanggal</th>
         <th scope="col">Jumlah</th>

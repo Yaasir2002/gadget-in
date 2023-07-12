@@ -67,6 +67,12 @@ use App\Http\Controllers\adminController;
 
     Route::get('/admin', 
         [adminController::class, 'admin'])->name('admin');
+    
+    Route::get('/users', 
+    [adminController::class, 'users'])->name('pengguna.users'); 
+
+    Route::get('/kategori', 
+    [adminController::class, 'kategori'])->name('pengguna.kategori'); 
 
     Route::get('/product', 
         [adminController::class, 'product'])->name('produk.product'); 

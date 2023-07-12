@@ -2,11 +2,11 @@
 
 @section('content2')
 <a href="{{ route('produk.create') }}" class="btn btn-primary mb-3">Tambah Produk</a>
-<div style="max-height: 400px; overflow-x: scroll;">
+<div class="table-responsive">
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
       <tr class="text-center">
-        <th scope="col">#</th>
+        <th scope="col">No</th>
         <th scope="col">Kode</th>
         <th scope="col">Produk</th>
         <th scope="col">Stok</th>
@@ -26,7 +26,7 @@
         <td>{{ $product->nama }}</td>
         <td>{{ $product->stok }}</td>
         <td>{{ $product->harga }}</td>
-        <td style="width: 40%;">{{ $product->deskripsi }}</td>
+        <td style="width: 20%;">{{ $product->deskripsi }}</td>
         <td>{{ $product->foto }}</td>
         <td>{{ $product->type->nama }}</td>
         <td style="white-space: nowrap;">

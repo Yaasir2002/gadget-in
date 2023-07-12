@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Users;
 use App\Product;
 use App\Type;
 use App\Customer;
@@ -13,6 +14,18 @@ class adminController extends Controller
     public function admin()
     {
         return view ('/admin');
+    }
+
+    public function users()
+    {
+        $users = Users::all();
+        return view('/users', compact('users'));
+    }
+
+    public function kategori()
+    {
+        $types = Type::all();
+        return view('/kategori', compact('types'));
     }
 
     public function product()
@@ -127,4 +140,5 @@ class adminController extends Controller
         $orders = Order::all();
         return view ('/orders', compact('orders'));
     }
+
 }
