@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
 
-    
+
 
 
     <title>Gadget-IN</title>
@@ -26,10 +27,11 @@
 
     <link rel="stylesheet" href="/assets/css/lightbox.css">
 
-  </head>
-  <body>
-    
-  
+</head>
+
+<body>
+
+
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -38,11 +40,62 @@
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
     <!-- ***** Preloader End ***** -->
     @if (auth()->check() && auth()->user()->role == 'admin')
-                    
-                 <!-- ***** Header Area Start ***** -->
+        <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="/" class="logo">
+                                <img src="/assets/images/logo.png">
+                            </a>
+
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                                <li class="scroll-to-section"><a href="/admin/admin">Dashboard</a></li>
+                                <li class="scroll-to-section"><a href="/admin/users">User</a></li>
+                                <li class="scroll-to-section"><a href="/admin/Kategori">Kategori</a></li>
+                                <li class="scroll-to-section"><a href="/admin/product">Product</a></li>
+                                <li class="scroll-to-section"><a href="/admin/customers">Pelanggan</a></li>
+                                <li class="scroll-to-section"><a href="/admin/orders">Pesanan</a></li>
+                                <li class="submenu">
+                                    <a id="navbarDropdown" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }}
+                                    </a>
+                                    <ul>
+                                        <li class="breadcrumb-tem"> <a href="{{ route('logout') }}"
+                                                onclick="event.preventDefault();
+                                                  document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                            </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                class="d-none">
+                                                @csrf
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+
+    @elseif (auth()->check() && auth()->user()->role == 'user')
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -52,75 +105,43 @@
                         <a href="/" class="logo">
                             <img src="/assets/images/logo.png">
                         </a>
-                        
+
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="submenu">
-                                <a href="javascript:;">Admin</a>
-                                <ul>
-                                    <li><a href="admin/orders">Pemesanan</a></li>
-                                    <li><a href="admin/product">Produk</a></li>
-                                    <li><a href="products">kategori</a></li>
-                                    <li><a href="admin/customers">User</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="about">About us</a></li>
-                            <li class="scroll-to-section"><a href="about">Team</a></li>
-                            <li class="scroll-to-section"><a href="admin/admin">INI ADMIN</a></li>
-                            <li class="breadcrumb-tem"> <a  href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                              document.getElementById('logout-form').submit();">
-                                 {{ __('Logout') }}
-</a> </li>
-
-                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                 @csrf
-                             </form>
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-                    
-                @else
-                    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="/" class="logo">
-                            <img src="/assets/images/logo.png">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Product</a>
+                                <a href="javascript:;">Produk</a>
                                 <ul>
                                     <li><a href="#handphone">Handphone</a></li>
-                                    <li><a href="#tablet">Tablet</a></li>
                                     <li><a href="#laptop">Laptop</a></li>
                                     <li><a href="#earphone">Earphone</a></li>
                                     <li><a href="#camera">Camera</a></li>
-                                    <li><a href="/products">ALL PRODUK</a></li>
                                 </ul>
                             </li>
-                            <li class="scroll-to-section"><a href="/about">About Us</a></li>
-                            <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
-                            <li class="scroll-to-section"><a href="#kids">INI BUKAN ADMIN</a></li>
-                            <li class="scroll-to-section"><a href="/login">Login</a></li>
-                        </ul>        
+                            <li class="scroll-to-section"><a href="explore">About us</a></li>
+                            <li class="scroll-to-section"><a href="subscribe">Berlangganan</a></li>
+                            <li class="scroll-to-section"><a href="about"></a></li>
+                            <li class="submenu">
+                                <a id="navbarDropdown" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+                                <ul>
+                                    <li class="breadcrumb-tem"> <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
@@ -131,6 +152,48 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+
+    @else
+        <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="/" class="logo">
+                                <img src="/assets/images/logo.png">
+                            </a>
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                                <li class="submenu">
+                                    <a href="javascript:;">Product</a>
+                                    <ul>
+                                        <li><a href="#handphone">Handphone</a></li>
+                                        <li><a href="#tablet">Tablet</a></li>
+                                        <li><a href="#laptop">Laptop</a></li>
+                                        <li><a href="#earphone">Earphone</a></li>
+                                        <li><a href="#camera">Camera</a></li>
+                                        <li><a href="/products">ALL PRODUK</a></li>
+                                    </ul>
+                                </li>
+                                <li class="scroll-to-section"><a href="/about">About Us</a></li>
+                                <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
+                                <li class="scroll-to-section"><a href="#kids">INI BUKAN ADMIN</a></li>
+                                <li class="scroll-to-section"><a href="/login">Login</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
     @endif
 
     <div class="">
@@ -164,8 +227,8 @@
     <div class="">
         @yield('content8')
     </div>
-     <!-- ***** Footer Start ***** -->
-     <footer>
+    <!-- ***** Footer Start ***** -->
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -210,11 +273,14 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="under-footer">
-                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
-                        
-                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.
 
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank" title="free & premium responsive templates">ThemeWagon</a></p>
+                            <br>Design: <a href="https://templatemo.com" target="_parent"
+                                title="free css templates">TemplateMo</a>
+
+                            <br>Distributed By: <a href="https://themewagon.com" target="_blank"
+                                title="free & premium responsive templates">ThemeWagon</a>
+                        </p>
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -226,7 +292,7 @@
             </div>
         </div>
     </footer>
-    
+
 
     <!-- jQuery -->
     <script src="/assets/js/jquery-2.1.0.min.js"></script>
@@ -242,15 +308,16 @@
     <script src="/assets/js/scrollreveal.min.js"></script>
     <script src="/assets/js/waypoints.min.js"></script>
     <script src="/assets/js/jquery.counterup.min.js"></script>
-    <script src="/assets/js/imgfix.min.js"></script> 
-    <script src="/assets/js/slick.js"></script> 
-    <script src="/assets/js/lightbox.js"></script> 
-    <script src="/assets/js/isotope.js"></script> 
-    
+    <script src="/assets/js/imgfix.min.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/lightbox.js"></script>
+    <script src="/assets/js/isotope.js"></script>
+
     <!-- Global Init -->
     <script src="/assets/js/custom.js"></script>
 
-   
 
-  </body>
+
+</body>
+
 </html>

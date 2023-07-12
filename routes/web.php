@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\ProductController;
 
@@ -16,11 +17,16 @@ use  App\Http\Controllers\ProductController;
 
 Route::get('/', 
     [ProductController::class,'index']
-);
+);   
 
 Route::get('/produk/{id}', 
-[ProductController::class, 'view'])->name('detail');
+    [ProductController::class, 'view'])->name('detail');
 
+Route::get('/produk/checkout/{id}', 
+    [OrderController::class, 'create'])->name('checkout');
+
+Route::post('/produk/checkout/store', 
+    [OrderController::class, 'store'])->name('checkout.store');
 
 Route::get('/about', function () {
     return view('about');
