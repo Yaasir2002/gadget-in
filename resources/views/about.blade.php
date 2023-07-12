@@ -65,11 +65,15 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-6">
                     <div class="right-content">
                         <h4>About Us &amp; Our Store</h4>
-                        <span>Gadget-In merupakan toko yang menjual produk gadget, berdiri pada tahun 2020 hingga sekarang.</span>
+                        <span>Gadgetin adalah platform e-commerce yang menyediakan berbagai macam gadget terbaru dan
+                                terkini. Kami memahami kebutuhan Anda akan teknologi terkini dan kami hadir untuk memberikan
+                                solusi terbaik.</span>
                         <div class="quote">
-                            <i class="fa fa-quote-left"></i><p>Yang begitu brilian tentang gadget adalah kesederhanaannya.   - Desmond Llewelyn</p>
+                            <i class="fa fa-quote-left"></i><p>Kami percaya bahwa teknologi dapat memudahkan hidup kita dan meningkatkan produktivitas.
+                                    Oleh karena itu, visi kami adalah untuk memberikan akses mudah kepada semua orang untuk
+                                    mendapatkan teknologi terbaru dengan harga terjangkau.</p>
                         </div>
-                        <p>Perkembangan Gadget-In sangat pesat dimulai dari lokasi gerai pertama berdiri yaitu di ruko sewa mall, hingga sekarang berkembang pesat memiliki satu toko besar utama dan toko cabang-cabang di beberapa kota lainnya.</p>
+                        <p>Tidak hanya e-commerce Gadget-In juga memliki toko offline utama dan toko cabang-cabang di beberapa kota lainnya.</p>
                         <ul class="ul">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
