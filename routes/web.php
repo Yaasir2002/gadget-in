@@ -35,6 +35,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/product11s', function () {
+    return view('/product11s');
+});
+
 Route::get('/products', 
     [ProductController::class,'products']
 );

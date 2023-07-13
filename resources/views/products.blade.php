@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
 
     <title>Gadget-IN - Product Listing Page</title>
 
@@ -71,11 +72,14 @@ https://templatemo.com/tm-571-hexashop
                             <div class="thumb">
                                 <div class="hover-content">
                                     <ul>
-                                        <li><a href="{{route('detail',$product->id)}}"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="{{route('checkout', $product->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{ route('detail', $product->id) }}"><i class="fa fa-eye"></i></a>
+                                        </li>
+                                        <li><a href="{{ route('checkout', $product->id) }}"><i
+                                                    class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
-                                <img class="img2" src="{{ asset('/assets/images/' . $product->foto) }}" alt="">
+                                <img class="img2" src="{{ asset('/assets/images/' . $product->foto) }}"
+                                    alt="">
                             </div>
                             <div class="down-content">
                                 <h4>{{ $product->nama }}</h4>

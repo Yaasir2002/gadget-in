@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
+        <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon"> 
 
     <title>Gadget-IN - Product Detail Page</title>
 

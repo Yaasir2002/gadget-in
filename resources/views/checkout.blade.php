@@ -7,6 +7,7 @@
     <title>Pemesanan</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon"> 
 
     <link rel="icon" type="image/png" href="/assets/favicon.ico">
 
