@@ -35,37 +35,37 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="/admin/admin">
+            <a href="/admin">
               <i class="nav-icon fas fa-tasks"></i>
               <p>Admin</p>
             </a>
           </li>
           <li>
-            <a href="/admin/users">
+            <a href="/users">
               <i class="nav-icon fas fa-key"></i>
               <p>User</p>
             </a>
           </li>
           <li>
-            <a href="/admin/kategori">
+            <a href="/kategori">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>Kategori</p>
             </a>
           </li>
           <li>
-            <a href="/admin/product">
+            <a href="/product">
               <i class="nav-icon fas fa-mobile"></i>
               <p>Produk</p>
             </a>
           </li>
           <li>
-            <a href="/admin/customers">
+            <a href="/customers">
               <i class="nav-icon fas fa-user"></i>
               <p>Pelanggan</p>
             </a>
           </li>
           <li>
-            <a href="/admin/orders">
+            <a href="/orders">
               <i class="nav-icon fas fa-shopping-cart"></i>
               <p>pesanan</p>
             </a>
