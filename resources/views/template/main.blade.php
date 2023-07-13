@@ -181,7 +181,6 @@
                                 </li>
                                 <li class="scroll-to-section"><a href="/about">About Us</a></li>
                                 <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
-                                <li class="scroll-to-section"><a href="#kids">INI BUKAN ADMIN</a></li>
                                 <li class="scroll-to-section"><a href="/login">Login</a></li>
                             </ul>
                             <a class='menu-trigger'>

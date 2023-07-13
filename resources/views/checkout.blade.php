@@ -101,15 +101,23 @@
 <body>
     <div class="container-contact100">
         <div class="wrap-contact100">
-            <form action="{{ route('checkout.store', $products->id) }}" method="post" class="contact100-form validate-form">
+            <form action="{{ route('checkout.store', $products->id) }}" method="post"
+                class="contact100-form validate-form">
                 <span class="contact100-form-title">
                     Checkout
                 </span>
-
                 @csrf
+                @php
+                    use Illuminate\Support\Facades\DB;
+                    
+                    $maxCode = DB::table('orders')->max('kode');
+                    $urutan = (int) substr($maxCode, 2, 3);
+                    $urutan++;
+                    $kode = 'PS' . sprintf('%03s', $urutan);
+                @endphp
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Kode</span>
-                    <input class="input100" type="text" name="kode" value="PS(angka)">
+                    <input class="input100" type="text" name="kode" value="{{ $kode }}" readonly>
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 input100-select">
@@ -122,6 +130,9 @@
                                 <option value="{{ $c->id }}">{{ $c->nama }}</option>
                             @endforeach
                         </select>
+                        @error('customers_id')
+                            <small class="text-danger">{{ $message }} </small>
+                        @enderror
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -129,16 +140,23 @@
                     <span class="label-input100">Tanggal</span>
                     <input class="input100" type="date" name="tgl">
                     <span class="focus-input100"></span>
+                    @error('tgl')
+                        <small class="text-danger">{{ $message }} </small>
+                    @enderror
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Produk</span>
-                    <input class="input100" type="text" name="products_id" value="{{$products->id}}" readonly>{{$products->nama}}
+                    <input class="input100" type="text" name="products_id" value="{{ $products->id }}"
+                        readonly>{{ $products->nama }}
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Jumlah</span>
                     <input class="input100" type="number" name="jumlah" placeholder="jumlah">
                     <span class="focus-input100"></span>
+                    @error('jumlah')
+                        <small class="text-danger">{{ $message }} </small>
+                    @enderror
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="label-input100">Alamat
@@ -198,6 +216,25 @@
         integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
         data-cf-beacon="{&quot;rayId&quot;:&quot;7e35cb8e4f153598&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;si&quot;:100}"
         crossorigin="anonymous"></script>
+    @if ($messsage = Session::get('failed'))
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: '<a href="">Why do I have this issue?</a>'
+            })
+        </script>
+    @endif
+    @if ($messsage = Session::get('success'))
+        <script>
+            Swal.fire({
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            })
+        </script>
+    @endif
 
 
 </body>
