@@ -180,7 +180,6 @@
                                     </ul>
                                 </li>
                                 <li class="scroll-to-section"><a href="/about">About Us</a></li>
-                                <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
                                 <li class="scroll-to-section"><a href="/login">Login</a></li>
                             </ul>
                             <a class='menu-trigger'>
@@ -258,7 +257,6 @@
                         <li><a href="#">Homepage</a></li>
                         <li><a href="#">Product</a></li>
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
