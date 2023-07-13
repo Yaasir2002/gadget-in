@@ -63,7 +63,7 @@ Route::get('/users', function () {
 
 use App\Http\Controllers\adminController;
 
-    Route::prefix('/admin')->group(function(){
+Route::group(['middleware' =>['auth']], function(){
 
     Route::get('/admin', 
         [adminController::class, 'admin'])->name('admin');
