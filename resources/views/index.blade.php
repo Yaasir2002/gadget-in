@@ -95,7 +95,7 @@
                                                 </div>
                                             </div>
                                             <img
-                                                class="img2" src="/assets/images/laptop.png">
+                                                class="img1" src="/assets/images/laptop.png">
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@
                                                 </div>
                                             </div>
                                             <img
-                                                class="img3" src="/assets/images/earphone.png">
+                                                class="img1" src="/assets/images/earphone.png">
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@
                                                 </div>
                                             </div>
                                             <img
-                                                class="img4" src="/assets/images/camera.png">
+                                                class="img1" src="/assets/images/camera.png">
                                         </div>
                                     </div>
                                 </div>
@@ -177,7 +177,7 @@
                                                 <li><a href="{{route('checkout', $hp->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
-                                        <img class="img5" src="{{ asset('/assets/images/' . $hp->foto) }}"
+                                        <img class="img100" src="{{ asset('/assets/images/' . $hp->foto) }}"
                                             alt="gambar rusak">
                                     </div>
                                     <div class="down-content">
@@ -219,7 +219,7 @@
                                                 <li><a href="{{route('checkout', $tablet->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
-                                        <img class="img6" src="{{ asset('/assets/images/' . $tablet->foto) }}"
+                                        <img class="img100" src="{{ asset('/assets/images/' . $tablet->foto) }}"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -263,7 +263,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img class="" src="{{ asset('/assets/images/' . $laptop->foto) }}"
+                                        <img class="img100" src="{{ asset('/assets/images/' . $laptop->foto) }}"
                                             alt="gambar tidak tersedia">
                                     </div>
                                     <div class="down-content">
@@ -307,7 +307,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img class="" src="{{ asset('/assets/images/' . $earphone->foto) }}"
+                                        <img class="img100" src="{{ asset('/assets/images/' . $earphone->foto) }}"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -351,7 +351,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img class="" src="{{ asset('/assets/images/' . $camera->foto) }}"
+                                        <img class="img100" src="{{ asset('/assets/images/' . $camera->foto) }}"
                                             alt="">
                                     </div>
                                     <div class="down-content">

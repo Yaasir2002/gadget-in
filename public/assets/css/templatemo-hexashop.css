@@ -798,9 +798,22 @@ Handphone
   object-fit: cover;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6, .img7{
+.img1{
   width: 323px;
   height: 240px;
+  object-fit: cover;
+}
+
+.img2, .img3, .img4, .img5, .img6, .img7{
+  width: 323px;
+  height: 240px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.img100{
+  width: 323px;
+  height: 300px;
   object-fit: cover;
 }
 

@@ -75,7 +75,7 @@ https://templatemo.com/tm-571-hexashop
                                         <li><a href="{{route('checkout', $product->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
-                                <img src="{{ asset('/assets/images/' . $product->foto) }}" alt="">
+                                <img class="img2" src="{{ asset('/assets/images/' . $product->foto) }}" alt="">
                             </div>
                             <div class="down-content">
                                 <h4>{{ $product->nama }}</h4>
