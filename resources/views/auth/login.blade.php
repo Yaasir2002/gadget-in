@@ -1,116 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/assets/login/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/assets/login/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/assets/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/assets/login/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" name="formLogin"
+                onsubmit="return login()"
+                method="POST"
+                action="{{  route('login')}}">
+                @csrf
+					<span class="login100-form-logo">
+						<a href="/" ><img src="favicon.png" alt="" style="width: 15vh;"></a>
+					</span>
 
-    <!-- Google Font: Source Sans Pro -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
-    <!-- icheck bootstrap -->
-    <link
-      rel="stylesheet"
-      href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"
-    />
-    <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  <body class="hold-transition login-page" style="background-color: #347ebb;">
-    <div class="login-box">
-      <div class="login-logo text-white">
-      <p><b>Login</b> Gadget-IN</p>
-      </div>
-      <!-- /.login-logo -->
-      <div data-aos="zoom-in"
-      data-aos-duration="3000">
-        <div class="card">
-          <div class="col-md-6 offset-md-3">
-          <a href="index.html"><img src="favicon.png" class="img-fluid" alt="..."></a>
-        </div>
-        <div class="card-body login-card-body mt-0">
-          <p class="login-box-msg text-body">Login ke akun anda</p>
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in
+					</span>
 
-          <form
-            name="formLogin"
-            onsubmit="return login()"
-            method="POST"
-            action="{{  route('login')}}"
-          >
-          @csrf
-            <div class="input-group">
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="email"
-                placeholder="Email"
-              />
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-user"></span>
-                </div>
-              </div>
-            </div>
-            <p class="mb-3 text-danger" id="error1"></p>
-            <div class="input-group">
-              <input
-                type="password"
-                name="password"
-                class="form-control"
-                id="password"
-                placeholder="Password"
-              />
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-lock"></span>
-                </div>
-              </div>
-            </div>
-            <p class="mb-3 text-danger" id="error2"></p>
-            <div class="d-flex justify-content-between">
-              <div class="col-">
-                <div class="checkbox-content icheck-primary">
-                  <input type="checkbox" id="remember" />
-                  <label for="remember">Ingatkan saya</label>
-                </div>
-              </div>
-              <div class="col- text-end mt-1">
-                <a href="#">Lupa password?</a>
-              </div>
-            </div>
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" name="email" class="form-control" id="email" placeholder="Email" type="email">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
 
-            <div class="col align-self-center mt-3">
-              <button type="submit" class="btn btn-primary btn-block">
-                Login
-              </button>
-            </div>
-            <p class="mb-0 mt-2">
-              <a href="/register" class="text-center">Registrasi user</a>
-            </p>
-          </form>
-        </div>
-        <!-- /.login-card-body -->
-      </div>
-    </div>
-    </div>
-    <!-- /.login-box -->
-    <script>
-      AOS.init();
-    </script>
-    <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
-    <script src="dist/js/script.js"></script>
-  </body>
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password"
+                        name="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-90">
+						<a class="txt1" href="/register">
+							Register
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="/assets/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/assets/login/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/assets/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="/assets/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/assets/login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/assets/login/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/assets/login/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/assets/login/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="/assets/login/js/main.js"></script>
+
+</body>
 </html>

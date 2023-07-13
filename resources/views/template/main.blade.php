@@ -58,12 +58,12 @@
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
                                 <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                                <li class="scroll-to-section"><a href="/admin/admin">Dashboard</a></li>
-                                <li class="scroll-to-section"><a href="/admin/users">User</a></li>
-                                <li class="scroll-to-section"><a href="/admin/Kategori">Kategori</a></li>
-                                <li class="scroll-to-section"><a href="/admin/product">Product</a></li>
-                                <li class="scroll-to-section"><a href="/admin/customers">Pelanggan</a></li>
-                                <li class="scroll-to-section"><a href="/admin/orders">Pesanan</a></li>
+                                <li class="scroll-to-section"><a href="/admin">Dashboard</a></li>
+                                <li class="scroll-to-section"><a href="/users">User</a></li>
+                                <li class="scroll-to-section"><a href="/kategori">Kategori</a></li>
+                                <li class="scroll-to-section"><a href="/product">Product</a></li>
+                                <li class="scroll-to-section"><a href="/customers">Pelanggan</a></li>
+                                <li class="scroll-to-section"><a href="/orders">Pesanan</a></li>
                                 <li class="submenu">
                                     <a id="navbarDropdown" href="#"
                                         role="button" data-bs-toggle="dropdown" aria-haspopup="true"

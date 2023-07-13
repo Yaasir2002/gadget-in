@@ -6,7 +6,7 @@
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
       <tr class="text-center">
-        <th scope="col">#</th>
+        <th scope="col">No</th>
         <th scope="col">Nama</th>
         <th scope="col">Alamat</th>
         <th scope="col">NO. Hp</th>

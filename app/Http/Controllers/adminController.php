@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Users;
 use App\Product;
 use App\Type;
 use App\Customer;
@@ -14,6 +15,14 @@ class adminController extends Controller
     {
         return view ('/admin');
     }
+
+    public function users()
+    {
+        $users = Users::all();
+        return view('/users', compact('users'));
+    }
+
+    
 
     public function product()
     {
@@ -127,4 +136,49 @@ class adminController extends Controller
         $orders = Order::all();
         return view ('/orders', compact('orders'));
     }
+
+    public function kategori()
+    {
+        $types = Type::all();
+        return view('/kategori', compact('types'));
+    }
+    public function create3()
+    {
+        return view('/create3');
+    }
+
+    public function store3(Request $request)
+    {
+        $request->validate([
+            'nama' => 'required'
+        ]);
+
+        Type::create($request->all());
+        return redirect()->route('type.kategori')->with('success', 'Type created successfully');
+    }
+
+    public function editKategori($id)
+    {
+        $types = Type::find($id);
+        return view('/edit3', compact('types'));
+    }
+
+    public function updateKategori(Request $request, $id)
+    {
+        $request->validate([
+            'nama' => 'required'
+        ]);
+
+        $type = Type::find($id);
+        $type->update($request->all());
+
+        return redirect()->route('type.kategori')->with('success', 'Type updated successfully');
+    }
+
+    public function destroyKategori(Type $type)
+    {
+        $type->delete();
+        return redirect()->route('type.kategori')->with('success', 'Type deleted successfully');
+    }
+
 }

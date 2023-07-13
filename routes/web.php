@@ -62,10 +62,16 @@ Route::get('/users', function () {
 
 use App\Http\Controllers\adminController;
 
-    Route::prefix('/admin')->group(function(){
+Route::group(['middleware' =>['auth']], function(){
 
     Route::get('/admin', 
         [adminController::class, 'admin'])->name('admin');
+    
+    Route::get('/users', 
+        [adminController::class, 'users'])->name('pengguna.users'); 
+
+    Route::get('/kategori', 
+        [adminController::class, 'kategori'])->name('type.kategori'); 
 
     Route::get('/product', 
         [adminController::class, 'product'])->name('produk.product'); 
@@ -106,5 +112,19 @@ use App\Http\Controllers\adminController;
     Route::get('/orders', 
         [adminController::class, 'orders'])->name('orders');
 
+    Route::get('/create3', 
+        [adminController::class, 'create3'])->name('type.create');
+
+    Route::post('/kategori/store', 
+        [adminController::class, 'store3'])->name('type.store3');
+
+    Route::get('/kategori/edit/{id}', 
+        [adminController::class, 'editKategori'])->name('type.edit3');
+
+    Route::put('/kategori/update/{id}', 
+        [adminController::class, 'updateKategori'])->name('type.update3');
+    
+    Route::delete('/kategori/destroy/{type}', 
+        [adminController::class, 'destroyKategori'])->name('type.destroy');
 
         });

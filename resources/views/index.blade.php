@@ -177,8 +177,8 @@
                                                 <li><a href="{{route('checkout', $hp->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
-                                        <img class="img5" src="/assets/images/handphone.png"
-                                            alt="">
+                                        <img class="img5" src="{{ asset('/assets/images/' . $hp->foto) }}"
+                                            alt="gambar rusak">
                                     </div>
                                     <div class="down-content">
                                         <h5>{{ $hp->nama }}</h5>
@@ -219,7 +219,7 @@
                                                 <li><a href="{{route('checkout', $tablet->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
-                                        <img class="img6" src="/assets/images/tablet.png"
+                                        <img class="img6" src="{{ asset('/assets/images/' . $tablet->foto) }}"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -263,8 +263,8 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img class="" src="/assets/images/laptop.png"
-                                            alt="">
+                                        <img class="" src="{{ asset('/assets/images/' . $laptop->foto) }}"
+                                            alt="gambar tidak tersedia">
                                     </div>
                                     <div class="down-content">
                                         <h5>{{ $laptop->nama }}</h5>
@@ -307,7 +307,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img class="" src="/assets/images/laptop.png"
+                                        <img class="" src="{{ asset('/assets/images/' . $earphone->foto) }}"
                                             alt="">
                                     </div>
                                     <div class="down-content">
@@ -351,7 +351,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <img class="" src="/assets/images/laptop.png"
+                                        <img class="" src="{{ asset('/assets/images/' . $camera->foto) }}"
                                             alt="">
                                     </div>
                                     <div class="down-content">
