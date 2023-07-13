@@ -10,7 +10,6 @@
         <th scope="col">Email</th>
         <th scope="col">Password</th>
         <th scope="col">Role</th>
-        <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -22,14 +21,6 @@
         <td>{{ $user->email }}</td>
         <td style="width: 20%;">{{ $user->password }}</td>
         <td>{{ $user->role }}</td>
-        <td style="white-space: nowrap;">
-          <a href="" class="btn btn-primary">Edit</a>
-          <form action="" method="POST" style="display: inline;">
-            @csrf
-            @method('DELETE')
-            <button type="submit" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')" class="btn btn-danger">Delete</button>
-        </form>
-        </td>
       </tr>
       @php $number++ @endphp
       @endforeach

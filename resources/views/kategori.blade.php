@@ -1,7 +1,7 @@
 @extends('template/admin')
 
 @section('content2')
-<a href="" class="btn btn-primary mb-3">Tambah Kategori</a>
+<a href="{{ route('type.create') }}" class="btn btn-primary mb-3">Tambah Kategori</a>
 <div class="table-responsive" style="max-height: 400px; overflow-x: scroll;">
   <table class="table table-striped table-bordered">
     <thead class="table-dark">
@@ -18,12 +18,12 @@
         <td class="text-center">{{ $number }}</td>
         <td>{{ $type->nama }}</td>
         <td style="white-space: nowrap;">
-          <a href="" class="btn btn-primary">Edit</a>
-          <form action="" method="POST" style="display: inline;">
+          <a href="{{ route('type.edit3', ['id' => $type->id]) }}" class="btn btn-primary">Edit</a>
+          <form action="{{ route('type.destroy', $type) }}" method="POST" style="display: inline;">
             @csrf
             @method('DELETE')
             <button type="submit" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')" class="btn btn-danger">Delete</button>
-        </form>
+          </form>
         </td>
 
       </tr>
