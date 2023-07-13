@@ -59,7 +59,7 @@ https://templatemo.com/tm-571-hexashop
             <div class="row">
                 <div class="col-lg-8">
                     <div class="left-images">
-                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNep4S--efLrwLTDSlLrf4mtWXK6_Q0JgBEI9_9yfOi8tSoebslXBg5DRr9hxppswiLvAiw3SHtXgbCMDu6FwIOY6WaujBYoStCAhKhIPNAw00B8OiGeR&usqp=CAE"
+                        <img src="{{ asset('/assets/images/' . $product->foto) }}"
                             alt="">
                     </div>
                 </div>

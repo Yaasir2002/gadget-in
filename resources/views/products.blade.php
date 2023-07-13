@@ -71,12 +71,11 @@ https://templatemo.com/tm-571-hexashop
                             <div class="thumb">
                                 <div class="hover-content">
                                     <ul>
-                                        <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                        <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        <li><a href="{{route('detail',$product->id)}}"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="{{route('checkout', $product->id)}}"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>
-                                <img src="assets/images/men-01.jpg" alt="">
+                                <img src="{{ asset('/assets/images/' . $product->foto) }}" alt="">
                             </div>
                             <div class="down-content">
                                 <h4>{{ $product->nama }}</h4>
@@ -89,10 +88,10 @@ https://templatemo.com/tm-571-hexashop
             <div class="col-lg-12">
                 <div class="pagination">
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="#">1</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#">2</a>
                         </li>
                         <li>
